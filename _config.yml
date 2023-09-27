@@ -17,17 +17,13 @@ title: תכנות ב-Java לקבוצות FRC
 email: yuvald.dev@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   תכנות בשפת Java לקבוצות FRC עם יובל דולב
-domain: ydlv-frc.github.io
-url: https://ydlv-frc.github.io
-baseurl: ""
-
 github_username: ydlv-frc
 minimal_mistakes_skin: contrast
 search: true
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: :year/:month/:day/:title/
 paginate: 5 # amount of posts to show
