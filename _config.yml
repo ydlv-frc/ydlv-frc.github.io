@@ -60,17 +60,7 @@ plugins:
 author:
   name   : "יובל דולב"
   avatar : "/assets/images/bio-photo.png"
-  bio    : >
-    מנטור FRC 
-    בקבוצת Ladies FIRST #4319,
-    בוגר The Spikes #2212 (מחזור 2016).
-    לשעבר מנטור בקבוצת The Red Pirates #4661.
-   סטודנט להנדסת תוכנה באוניברסיטת בן גוריון ומתכנת.
-
-footer:
-  links:
-    
-
+  bio    : "מנטור FRC בקבוצת Ladies FIRST #4319, בוגר The Spikes #2212 (מחזור 2016). לשעבר מנטור בקבוצת The Red Pirates #4661. סטודנט להנדסת תוכנה באוניברסיטת בן גוריון ומתכנת."
 defaults:
   # _posts
   - scope:
