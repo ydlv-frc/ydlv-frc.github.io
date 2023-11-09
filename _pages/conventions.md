@@ -43,6 +43,7 @@ name
 Direction
 MotorController
 CommandBase
+DoubleConsumer
 ```
 
 ## lower_snake_case
@@ -133,13 +134,129 @@ public class KidsSafety {
 }
 ```
 
+# סוגריים מסולסלים
+
+החשיבות של המוסכמות האלה יותר נמוכה מאשר, למשל, שמות משתנים, אבל עדיין כדאי להכיר אותן ולהקפיד עליהן.
+
+## הפותח
+
+סוגר-**פותח** של סוגריים מסולסלים יהיה באותה שורה בה המבנה שאותו הוא פותח, ולא מקבל שורה משל עצמו. כלומר, הקוד הבא נכון:
+
+```java
+if(year % 4 == 0) {
+    System.out.println("Olympic games year");
+}
+```
+
+והבא אינו נכון:
+
+```java
+if(year % 4 == 0)
+{
+    System.out.println("Olympic games year");
+}
+```
+
+(לידיעה כללית, יש שפות, למשל סי-שארפ, שבהן זה הפוך - הסוגר הפותח צריך לקבל שורה משל עצמו)
+
+## הסוגר
+
+סוגר-**סוגר** של סוגריים מסולסלים יהיה בשורה משל עצמו, כלומר הקוד הבא נכון:
+
+```java
+if(year % 4 == 0) {
+    System.out.println("Olympic games year");
+}
+System.out.println("Year: " + year);
+```
+
+והבא אינו נכון:
+
+```java
+if(year % 4 == 0) {
+    System.out.println("Olympic games year");
+} System.out.println("Year: " + year);
+```
+
+### למעט במקרה אחד
+
+יש יוצא מן הכלל אחד לכלל הזה - במקרה של `else` או `else if`, הסוגר הסוגר יהיה ביחד עם ה-`else` או ה-`else if` שבא אחריו. כלומר, הקוד הבא נכון:
+
+```java
+if(year % 4 == 0) {
+    System.out.println("Summer Olympic games year");
+} else if (year % 2 == 0) {
+    System.out.println("Winter Olympic games year");
+} else {
+    System.out.println("No Olympic game this year.");
+}
+System.out.println("Year: " + year);
+```
+
+לעומת זאת, הבא אינו תקין:
+
+```java
+if(year % 4 == 0) {
+    System.out.println("Summer Olympic games year");
+}
+else if (year % 2 == 0) {
+    System.out.println("Winter Olympic games year");
+}
+else {
+    System.out.println("No Olympic game this year.");
+}
+System.out.println("Year: " + year);
+```
+
+המקרה החריג הזה אינו חשוב מאוד, כלומר, קוד כמו זה שמעל שורה זו אינו נורא. מה שכן, מה שעדיין אסור הוא דבר כמו זה:
+
+```java
+if(year % 4 == 0) {
+    System.out.println("Summer Olympic games year");
+}
+else if (year % 2 == 0) {
+    System.out.println("Winter Olympic games year");
+}
+else {
+    System.out.println("No Olympic game this year.");
+} System.out.println("Year: " + year);
+```
+
+שמנו סוגר-סוגר באותה שורה עם פקודה שאינה חלק מרצף של if-else-if - לא בסדר. בנוסף, גם במקרה של if-else-if, הכללים לגבי סוגר-פותח נשמרים. כלומר, הקוד הבא גם אינו נכון:
+
+```java
+if(year % 4 == 0)
+{
+    System.out.println("Summer Olympic games year");
+}
+else if (year % 2 == 0)
+{
+    System.out.println("Winter Olympic games year");
+}
+else
+{
+    System.out.println("No Olympic game this year.");
+}
+System.out.println("Year: " + year);
+```
+
+## סוגריים מסולסלות ריקות
+
+אם הסוגריים המסולסלות ריקות, לשים את הסוגר-הסוגר בשורה משל עצמו זה תקין, וגם לשים אותו באותו שורה עם הסוגר-הפותח תקין:
+
+```java
+public void doNothing() {} // fine
+public void doNothing() {
+} // also fine
+```
+
 
 
 # כללים אופציונליים למיטבי לכת
 
 * השתמשו ב-Linter. 
-* הגבילו את:
-  * האורך המקסימלי של שורה אצלכם
-  * האורך המקסימלי של קובץ
-  * האורך המקסימלי של פונקציה
-  * **[הסיבוכיות הקוגניטיבית](https://en.wikipedia.org/wiki/Cognitive_complexity) של כל פונקציה** - סיבוכיות קוגניטיבית היא דבר שאני מקווה לכתוב עליו פוסט בפני עצמו יום אחד, אבל לבינתיים, הנה מה שאגיד עליה: ראשית, סיבוכיות קוגניטיבית אינה אותו סוג של סיבוכיות שמתעסקים בו במדעי המחשב, זה שעוסק ביעילות זמן וזיכרון: סיבוכיות של מדעי המחשב אינה מעניינת אותנו כמעט אף פעם בעולם של FRC. סיבוכיות קוגניטיבית היא מדד של כמה קונספטים בבת אחת מכילה הפונקציה. באופן כללי, זהו מדד של כמה אפשר לקלוט את הפונקציה בבת אחת באופן קוגניטיבי (ולכן השם). איך מודדים סיבוכיות קוגניטבית? ובכן, לזה אין בהכרח מדד אחד, אבל כן יש משהו בשם **[סיבוכיות ציקלומטית](https://en.wikipedia.org/wiki/Cyclomatic_complexity)** (לא להיבהל מהשם!) שאפשר למדוד, ואפשר להתאים Linter לייצר אזהרות על סיבוכיות ציקלומטית גדולה מדי. סיבוכיות קוגניטיבית גבוהה היא לרוב סימן שגם עברתם על [עקרון האחריות היחידה (SRP - Single Responsibility Principle)](https://en.wikipedia.org/wiki/Single-responsibility_principle), שגם עליו אני מתכוון לכתוב פוסט בעתיד.
+  * השתמשו בו גם כדי להגביל את:
+    * האורך המקסימלי של שורה אצלכם
+    * האורך המקסימלי של קובץ
+    * האורך המקסימלי של פונקציה
+    * **[הסיבוכיות הקוגניטיבית](https://en.wikipedia.org/wiki/Cognitive_complexity) של כל פונקציה** - סיבוכיות קוגניטיבית היא דבר שאני מקווה לכתוב עליו פוסט בפני עצמו יום אחד, אבל לבינתיים, הנה מה שאגיד עליה: ראשית, סיבוכיות קוגניטיבית אינה אותו סוג של סיבוכיות שמתעסקים בו במדעי המחשב, זה שעוסק ביעילות זמן וזיכרון: סיבוכיות של מדעי המחשב אינה מעניינת אותנו כמעט אף פעם בעולם של FRC. סיבוכיות קוגניטיבית היא מדד של כמה קונספטים בבת אחת מכילה הפונקציה. באופן כללי, זהו מדד של כמה אפשר לקלוט את הפונקציה בבת אחת באופן קוגניטיבי (ולכן השם). איך מודדים סיבוכיות קוגניטבית? ובכן, לזה אין בהכרח מדד אחד, אבל כן יש משהו בשם **[סיבוכיות ציקלומטית](https://en.wikipedia.org/wiki/Cyclomatic_complexity)** (לא להיבהל מהשם!) שאפשר למדוד, ואפשר להתאים Linter לייצר אזהרות על סיבוכיות ציקלומטית גדולה מדי. סיבוכיות קוגניטיבית גבוהה היא לרוב סימן שגם עברתם על [עקרון האחריות היחידה (SRP - Single Responsibility Principle)](https://en.wikipedia.org/wiki/Single-responsibility_principle), שגם עליו אני מתכוון לכתוב פוסט בעתיד.
