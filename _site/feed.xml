@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-25T20:49:57+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">תכנות ב-Java לקבוצות FRC</title><subtitle>תכנות בשפת Java לקבוצות FRC עם יובל דולב</subtitle><author><name>יובל דולב</name></author><entry><title type="html">שלום עולם!</title><link href="http://localhost:4000/2024/04/25/hello-world/" rel="alternate" type="text/html" title="שלום עולם!" /><published>2024-04-25T00:00:00+03:00</published><updated>2024-04-25T00:00:00+03:00</updated><id>http://localhost:4000/2024/04/25/hello-world</id><content type="html" xml:base="http://localhost:4000/2024/04/25/hello-world/">&lt;p&gt;שלום עולם!&lt;/p&gt;
+
+&lt;p&gt;אני יובל דולב, מנטור בקבוצת &lt;a href=&quot;https://www.facebook.com/LadiesFIRST4319&quot;&gt;Ladies FIRST #4319&lt;/a&gt;, בוגר קבוצת &lt;a href=&quot;https://www.facebook.com/Spikes2212&quot;&gt;The Spikes #2212&lt;/a&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FRC&lt;/code&gt;  (מחזור 2016) ומנטור לשעבר בקבוצת The Red Pirates #4661. אני כאן כדי לעזור לקבוצות &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FRC&lt;/code&gt; ללמוד לתכנת רובוט לתחרות &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FRC&lt;/code&gt; בשפת &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Java&lt;/code&gt; - וגם ללמוד איתכם ביחד.&lt;/p&gt;
+
+&lt;p&gt;התחלתי ללמד את הנושא כבר משנתי השנייה כתלמיד בקבוצת The Spikes #2212, ומאז שסיימתי את התיכון, לימדתי את הנושא לסירוגין מדי פעם. בימים אלה אני כאמור מנטור בקבוצת Ladies FIRTS #4319 (זוהי שנתי השניה בקבוצה), והפוסטים שלי מבוססים על הנסיון שלי בלימוד הנושא ועל הנסיונות הנוכחיים. לפעמים הפוסטים נכתבים לפני שאני מעביר בקבוצה את השיעורים התואמים להם, לפעמים אחרי, ולפעמים פוסטים אינם אמורים להיות בקשר של אחד-אחד עם מערכי שיעור.&lt;/p&gt;
+
+&lt;p&gt;במהלך השנים אני מנסה לבנות את סדר הנושאים הנכון ביותר ללימוד הנושא ואת הצורה הנכונה ביותר להעביר כל נושא. אני מקווה לשקף את זה בבלוג הזה.&lt;/p&gt;
+
+&lt;h1 id=&quot;למה-להיות-בצוות-תכנות&quot;&gt;למה להיות בצוות תכנות&lt;/h1&gt;
+
+&lt;p&gt;אוקיי, קודם כל, לא בכל קבוצת FRC צריך להיות צוות שקורא לעצמו “צוות תכנות” - קבוצות יכולות לחלק את עצמן ואת המשימות שלהן בכל צורה שהיא, אבל בכל קבוצת FRC שראיתי יש צוות שעוסק בתכנות הרובוט (לפעמים בדברים נוספים, לפעמים לא), ובסך הכל זה הגיוני. באיזה צורה שזו לא תהיה, כנראה שמי שמצטרפת לקבוצת FRC תצטרך לבחור האם היא רוצה להיות מעורבת בתכנות הקוד של הרובוט. אז למה ללכת על “כן”? הנה כמה סיבות:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;התחום הזה רלוונטי לעולם המודרני, ולישראל:&lt;/strong&gt; בעולם שבו הכל ממוחשב, יש ביקוש למתכנתות ומתכנתים. אני לא הולך להכנס לסטטיסטיקות וכאלה - כל מי שקוראת את זה כנראה יודעת שתכנות זה דבר מאוד רלוונטי בעולם. אם מישהי אומרת לך שמה היא למדה באוניברסיטה זה תכנות, אף אחת לא שואלת “יש מה לעשות עם זה?” (אגב, אני לא מודע למוסדות אקדמיים שמציעים תואר בשם “תכנות” אבל יש מספיק מקומות שלומדים בהם תארים שהם בגדול תארים בתכנות. אני למשל בימים אלה בשנתי הרביעית בתואר הנדסת תוכנה באוניברסיטת בן גוריון). אז &lt;strong&gt;יש בזה עבודה, ולהכיר את התחום עוזר&lt;/strong&gt;. זה גם &lt;strong&gt;עוזר להתקבל ליחידות טכנולוגיות בצה”ל&lt;/strong&gt;. ואני לא נכנס בכלל לעניינים של שכר ותנאי העסקה של מתכנתים באזרחות - אני בטוח ששמעתן על זה מספיק.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;זה די מגניב לתכנת בכללי&lt;/strong&gt;: לפני שאסביר על זה, בואו נסתכל על &lt;a href=&quot;https://xkcd.com/722/&quot;&gt;רצועת קומיקס&lt;/a&gt; של XKCD (רנדל מונרו) שעושה זום אאוט לכמה זה מוזר כשמשהו לא עובד בתחום הזה -&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgs.xkcd.com/comics/computer_problems.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;אז כן, זה נשמע מוזר שמה שמתכנתות עושות רוב הזמן זה ללחוץ על כפתורים כדי לשנות את הצבעים מקופסת מתכת של אורות, אבל יש הרבה דברים מגניבים שאפשר לעשות אם יודעים לתכנת. אפשר לייצר משחקים, לבנות אתרים, ואינספור דברים מגניבים - אה, ויש גם את זה ש-&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;לתכנת רובוט זה ממש מגניב&lt;/strong&gt;. ב-FRC אנחנו בונים רובוטים ענקיים שנוסעים, מסתובבים, זורקים דברים, יורים כדורים, מטפסים ועוד כל מיני דברים מגניבים. וזה ממש מגניב לכתוב קוד בידיעה שתכף נלחץ על כפתור והקוד הזה “יעבור” לרובוט, ואז נלחץ על כפתורים והרובוט יזוז. וחלק מהקוד שלנו יגרום לרובוט לעשות דברים על ידי קלט שהוא מקבל מצוות הנהיגה, וחלקו יגרום לרובוט לעשות דברים לבד. ואגב -&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ככל שנהיה צוות תכנות יותר טוב, הרובוט שלנו יוכל להיות יותר מוצלח בתחרות:&lt;/strong&gt; אם צוות התכנות שלנו היה צריך לכתוב פקודות במקלדת כדי שהרובוט יזוז, למשל &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shoot ball&lt;/code&gt; בכל פעם שהן יצטרכו לירות כדור - אוקיי, זה נשמע כמו פרויקט די כיפי ומעניין, אבל זה לא טוב לתחרות. אנחנו רוצות שבתחרות הנהגות שלנו יוכלו לשלוט ברובוט בקלות. למשל, אם הרובוט שלנו צריך להיות מסובב בכיוון מסוים כדי לקלוט כדור מהשחקנית האנושית, ולהיות במקום אחר במגרש ובזווית אחרת כדי לזרוק את הכדור לסל, אז אם נצליח להקל על הנהגות את המשימה של הזזת הרובוט בין שני המצבים - למשל, אם נצליח ליצור דרך שבה יוכל הרובוט להסתובב &lt;em&gt;תוך כדי&lt;/em&gt; שהוא בדרך לעמדת הזריקה לסל, במקום קודם להסתובב לכיוון עמדת הזריקה &lt;em&gt;ואז&lt;/em&gt; לנסוע לשם &lt;em&gt;ואז&lt;/em&gt; להסתובב לכיוון הסל - זה יכול לחסוך לנו זמן ונוכל לעשות זאת יותר פעמים במשחק.&lt;/p&gt;
+
+&lt;p&gt;וזה עוד לפני שדיברנו על &lt;strong&gt;השלב האוטונומי&lt;/strong&gt; - כל משחק FRC מאז 2003 (אם לא טעיתי בשנה) מתחיל ב-15 שניות של שלב אוטונומי, שבהן הרובוטים פועלים בעצמם ללא קלט מאף אדם. אלו 15 שניות שלמות של משחק (מתוך שתי דקות וחצי), שזה לא מעט - הן בתחילת המשחק, כך שמה שיקרה בשלב הזה ישפיע על המשך המשחק, ובנוסף להכל, לעתים קרובות משימות באוטונומי שוות יותר נקודות (לרוב פי שתיים, אם כי היו מקרים של פחות ושל יותר). בקיצור, &lt;strong&gt;רובוט שבולט בשלב האוטונומי עושה הבדל. קבוצה שטובה באוטונומי זו קבוצה שאת רוצה איתך בברית - וקבוצה שטובה באוטונומי יכולה גם למצוא את עצמה מסיימת את שלב המוקדמות מספיק גבוה כדי להיות ראש ברית&lt;/strong&gt; (לא הסברתי את צורת התחרות כאן בבלוג ומה זו ברית בכלל, כך שאם מישהי קוראת את זה ועוד לא הייתה בתחרות ולא מכירה את הפורמט, אז זה סיפור ליום אחר, אבל מה שבטוח, הבנתן שזה דבר טוב).&lt;/p&gt;
+
+&lt;h1 id=&quot;מה-צריך-ללמוד-בשביל-להיות-בצוות-תכנות&quot;&gt;מה צריך ללמוד בשביל להיות בצוות תכנות&lt;/h1&gt;
+
+&lt;p&gt;יש מה ללמוד כדי לתכנת את הרובוט, ובפרט - איך לתכנת ומה זה בכלל. בחלק מהקבוצות, התלמידים, או לפחות חלקם, לומדים או למדו תכנות בגם במסגרת אחרת - חלקן ב-Java וחלקן בשפות אחרות. אני מתחיל את מה שהולך כאן מאפס, כדי שיהיה אפשר לגשת לצוות תכנות גם בלי ידע מוקדם בתכנות. החלק הקצת מבאס הוא שזה מתחיל קצת לאט. אנחנו צריכים להכיר את הכלים שרלוונטיים לנו ב-Java, ואת צורת החשיבה של השפה הזו. ובהתחלה זה מרגיש שלא רואים תכנות לרובוט באופק, אבל אני מבטיח שמגיעים לזה, וגם מהר יחסית. לתלמידות שלי אני מציג גם תרגילים בנושאים שבדרך לתכנות רובוט, והם עוסקים בדברים שלא מרגישים קשורים לרובוטים, כמו למשל, “כתבי קוד שבודק האם השנה (הלועזית) מעוברת”.&lt;/p&gt;
+
+&lt;h2 id=&quot;האם-צריך-להתחיל-לשנן&quot;&gt;האם צריך להתחיל לשנן&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;אל תתחילו לשנן.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;כשהייתי בתיכון, הייתי במגמת מדעי המחשב, וכל המבחנים (כולל הבגרות) היו עם &lt;strong&gt;חומר פתוח&lt;/strong&gt; - כמה חומר פתוח שרוצים. מחברות, ספרים - בגדול היה כתוב “הכל חוץ ממחשב” - אילו הייתי רוצה, היה בסדר גם אם הייתי מביא את כל כרכי “שר הטבעות” (שמעתי גם על מישהי שלבחינת המתכונת הביאה מקלדת, עכבר, מסך ורמקול - כיוון שהיה כתוב “הכל חוץ ממחשב”). בעולם האמיתי, מתכנתים כמעט תמיד יכולים לבדוק דברים בגוגל, וגם מתכנתים שעוסקים ב-Java כל יום במשך שנים עשויים למצוא את עצמם בודקים בגוגל “How to read from a file Java”. יש אולי מסגרות אקדמיות שונות שבהן לא ירשו חומר פתוח, ויש מעסיקים שהמחשבים שלהם לא מחוברים לרשת האינטרנט (בעיקר צה”ל), אבל הגישה שלי, היא שכיוון ש&lt;strong&gt;אני&lt;/strong&gt; לא מנהל מתכנתים בהקשר בטחוני, שבו צריך לשמור על מחשבים מסווגים שאסור שיהיו מחוברים לרגע לאינטרנט, וכיוון שאני גם לא מלמד למבחן אקדמי שבסופו צריך להיבחן עם נייר ועט, אז לא רק שאני בסדר עם חומר פתוח, זה כולל &lt;strong&gt;כל&lt;/strong&gt; חומר פתוח, כולל גוגל.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/2024/03/google.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;&lt;strong&gt;אבל - שימו לב - יושרה אינטלקטואלית היא חשובה:&lt;/strong&gt; אנחנו לא יכולות סתם להעתיק כל קוד. בין אם אנחנו מוצאים קוד בגוגל, ב-Stack Overflow או ב-Chat GPT, זה לא אומר שאנחנו רשאיות להשתמש בו. לא איכנס לענייני זכויות יוצרים מבחינת החוק על הנייר ותנאי השימוש שלא קראתן לאתרים השונים - בעיקר כי אני לא יכול לדבר בשמם של אותם אתרים, ואני גם לא משפטן. הנקודה החשובה היא שגם אם אנחנו לוקחות קוד ממקור אחר, במקרים שבהם זה טכנית חוקי ועומד בתנאי השימוש, יש לנו &lt;em&gt;בנוסף&lt;/em&gt; גם &lt;strong&gt;חובה מוסרית חשובה של יושרה אינטלקטואלית&lt;/strong&gt; - אנחנו צריכות לכל הפחות להבין את הרעיונות מאחוריו, לפחות במידה מסוימת. ככלל אצבע, אם אנחנו לוקחים קוד, אז בנוסף לשאלה של האם זה עומד בתנאי השימוש של המקור, חשוב גם הכלל ש&lt;strong&gt;הקוד הזה צריך להיות משהו שהיינו יכולות לכתוב בעצמנו, עם מספיק זמן של קריאת התיעוד&lt;/strong&gt; (שהן מעין “הוראות שימוש” של הכלים שמספקת שפת התכנות או הספריות).&lt;/p&gt;
+
+&lt;p&gt;אז אנחנו לומדים איך לעשות דברים בשפת תכנות, אבל אנחנו לא צריכים לשנן. מה שכן, אני כן ממליץ לנהל מחברת כלשהי. כשאני מעביר שיעורים, אני לא אומר לתלמידות שלי מה כן לכתוב במחברת ומה לא, ואני מדגיש שכל המצגות שלי תמיד יהיו זמינות להן, אבל כן מומלץ לנהל מחברת. מה לרשום? יותר מאשר כלום, פחות מאשר הכל. אבל יותר ספציפי מזה אין לי עצה אוניברסלית, לכו עם האינטואיציה שלכן.&lt;/p&gt;
+
+&lt;p&gt;אבל המקום העיקרי שדברים נכנסים ממנו הוא תרגול. כשלומדים קונספטים בתכנות שחדשים לנו, צריך לשבת ולשחק איתם. לפתוח את סביבת העבודה, לכתוב קוד ב-Java, להריץ אותו, לראות מה קורה, לשנות את הקוד, להריץ שוב ולראות מה קורה, וחוזר חלילה. משם לומדים. וזה לא אומר שצריך לזכור הכל אחרי סשן אחד או אפילו אלף - שוב, לא צריך לשנן.&lt;/p&gt;
+
+&lt;h2 id=&quot;מה-התכנית&quot;&gt;מה התכנית&lt;/h2&gt;
+
+&lt;p&gt;אנחנו צריכות להכיר את שפת Java, וזה השלב הראשון שלנו. נכיר את שפת Java ואת צורת החשיבה שלה - זה ייקח כמה נושאים ואז נוכל להתחיל לתכנת קוד לרובוט. אחרי שנכיר קצת את שפת Java, נוכל להכיר את WPILib - הספריה שבה אנחנו משתמשים כדי לתכנת קוד לרובוט, את צורת החשיבה שלה, ואת הכלים שבאים איתה כדי להעלות קוד לרובוט ולהריץ אותו. אחרי זה אפשר לעבור משם לרעיונות של בקרה מתקדמת - דברים כמו PID ואודומטריה ועיבוד תמונה וכל מיני דברים מגניבים. בנוסף, אני מתכוון גם ללמד דברים נוספים שרלוונטיים לניהול צוות תוכנה, כמו למשל גיט (שהיא תוכנה לניהול גרסאות של קוד בצוות), סקראם (שהיא שיטת עבודה לפרויקטים של תוכנה) ומדדים לאיכות קוד ופרקטיקות שונות שכדאי לאמץ וכל מיני דברים כאלה.&lt;/p&gt;
+
+&lt;div class=&quot;notice&quot;&gt;
+&lt;h1 id=&quot;נקודות-עיקריות&quot;&gt;נקודות עיקריות&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;הצגתי את עצמי&lt;/li&gt;
+  &lt;li&gt;הצגתי את מה שאני מתכוון לעשות בבלוג הזה&lt;/li&gt;
+  &lt;li&gt;נתתי כמה סיבות טובות להיות בצוות תכנות בקבוצת FRC&lt;/li&gt;
+  &lt;li&gt;הסברתי שלא צריך להתחיל לשנן, אבל כן כדאי לכתוב במחברת פה ושם&lt;/li&gt;
+  &lt;li&gt;הסברתי שחייבות גם להרגיש קצת דברים בידיים&lt;/li&gt;
+  &lt;li&gt;הסברתי מה התכנית מכאן והלאה&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;</content><author><name>יובל דולב</name></author><category term="כללי" /><category term="כללי" /><summary type="html">הצהרת כוונות, צפירת הרגעה ולמה להיות בצוות תכנות</summary></entry><entry><title type="html">מצגת מספר 0 - שלום עולם</title><link href="http://localhost:4000/2024/04/25/presentation-hello-world/" rel="alternate" type="text/html" title="מצגת מספר 0 - שלום עולם" /><published>2024-04-25T00:00:00+03:00</published><updated>2024-04-25T00:00:00+03:00</updated><id>http://localhost:4000/2024/04/25/presentation-hello-world</id><content type="html" xml:base="http://localhost:4000/2024/04/25/presentation-hello-world/">&lt;p&gt;
+אני מנסה לצרף לאתר גם את המצגות שלי, שאני מציג איתן את החומר וההרצאות שאני מעביר.
+&lt;/p&gt;
+
+&lt;p&gt;
+המצגת בפני עצמה לאו דווקא מספיקה ב-100% ללימוד עצמי, כי אני לרוב מדבר לידה, ואני לא שם במצגות את כל מה שאני הולך לומר אלא משהו שילווה את מה שאני אומר. הן כן נועדו להיות ידידותיות כמה שאפשר כדי שתלמידות יוכלו להשלים הרצאות שפספסו או לחזור על הרצאות שהיו בהן. אני כן מנסה לכתוב את הבלוג כמשלים למצגות, וכדי לשתף ידע עם תלמידים ומנטורים מחוץ לקבוצה שלנו, אבל דעו גם שבפוסטים אני לעתים קרובות גם נכנס לעומק לדברים שבמצגות אני עובר עליהן. כלומר, לעתים קרובות שקופית אחת במצגת הופכת לפוסט שלוקח עשר דקות לקרוא. 
+&lt;/p&gt;
+
+&lt;p&gt;
+המצגת הזו היא מצגת מספר 0 לפי סדר הלימוד שאני מעביר, והיא כוללת את הנושאים הבאים:
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;מהי תוכנה&lt;/li&gt;
+  &lt;li&gt;הרצה של תוכנית&lt;/li&gt;
+  &lt;li&gt;מהי קומפילציה&lt;/li&gt;
+  &lt;li&gt;מהו הטרמינל&lt;/li&gt;
+  &lt;li&gt;איך עושים פלט ב-Java&lt;/li&gt;
+  &lt;li&gt;הערות (גם: תגובות, קומנטים)&lt;/li&gt;
+  &lt;li&gt;משתנים&lt;/li&gt;
+  &lt;li&gt;טיפוסים&lt;/li&gt;
+  &lt;li&gt;הצהרה והשמה&lt;/li&gt;
+  &lt;li&gt;int ו-double&lt;/li&gt;
+  &lt;li&gt;אריתמטיקה&lt;/li&gt;
+  &lt;li&gt;קאסטינג&lt;/li&gt;
+  &lt;li&gt;חלוקה ומודולו&lt;/li&gt;
+  &lt;li&gt;קלט עם סקאנר&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe src=&quot;https://view.officeapps.live.com/op/embed.aspx?src=http://localhost:4000/assets/presentations/00_hello-world.pptx&quot; width=&quot;100%&quot; height=&quot;600px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;שימו לב: ניתן גם להוריד את המצגת על ידי תפריט שנפתח מכפתור שמופיע בצד ימין של השורה של התפריט למטה&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/2024/03/ppt-dl.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>יובל דולב</name></author><category term="מצגות" /><category term="צעדים ראשונים בג'אווה" /><category term="כללי" /><category term="מצגות" /><summary type="html">המצגת הראשונה לפי סדר לימוד מבין המצגות שאני מעביר בהרצאות</summary></entry><entry><title type="html">קאסטינג</title><link href="http://localhost:4000/2023/10/05/casting/" rel="alternate" type="text/html" title="קאסטינג" /><published>2023-10-05T00:00:00+03:00</published><updated>2023-10-05T00:00:00+03:00</updated><id>http://localhost:4000/2023/10/05/casting</id><content type="html" xml:base="http://localhost:4000/2023/10/05/casting/">&lt;div class=&quot;notice--warning&quot;&gt;
+
+    &lt;h1&gt;⚠ שימו לב - העמקה&lt;/h1&gt;
+    &lt;hr /&gt;
+    &lt;br /&gt;
+    &lt;div style=&quot;display: flex; align-items: flex-start;&quot;&gt;
+
+        &lt;div style=&quot;width: 33%;&quot;&gt;
+            &lt;img src=&quot;/assets/images/deep.jpg&quot; alt=&quot;Image Description&quot; style=&quot;height: 100%; width: auto; display: block; &quot; /&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;flex: 1; padding: 20px; margin-top: 0;&quot;&gt;
+            &lt;p&gt;
+                זהו מסוגי הפוסטים שבהם אני נכנס מאוד לעומק
+                בנושא שבדרך כלל אני עובר עליו מהר כשאני מעביר שיעורים
+                פרונטליים. בדרך כלל הנושא שלהם מסתכם בכמה שקופיות במצגת
+                פאוור פוינט, לפעמים אפילו שקופית אחת.
+            &lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+        &lt;b&gt;
+            &lt;a href=&quot;#נקודות-עיקריות&quot;&gt;
+                הפוסט מסתיים ברשימת נקודות עיקריות
+            &lt;/a&gt;
+            - להבין אותן זה מספיק.&lt;/b&gt;
+
+    &lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;הנקודה הבאה ב-Java שאני רוצה לדבר עליה היא קאסטינג (casting). לפני שני פוסטים (לינק) דיברתי על משתנים ב-Java. תזכורת מהירה לנקודות הרלוונטיות להיום:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ב-Java, למשתנים יש טיפוסים, שהם סוג הערכים שיכולים להיות בהם. אני חושב עליהם בתור “צורות”&lt;/li&gt;
+  &lt;li&gt;מערכת הטיפוסים מוודאת שאנחנו משתמשים במשתנים בצורה נכונה&lt;/li&gt;
+  &lt;li&gt;דוגמאות לכמה טיפוסים בסייסים ב-Java הם: int למספרים שלמים, long שגם הוא למספרים שלמים אבל תומך בטווח יותר גדול של מספרים, double למספרים עשרוניים (כמו &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-3.14&lt;/code&gt; אבל גם כמו &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2212.0&lt;/code&gt; שהוא אמנם נראה כמו מספר שלם אבל הוא “בצורה” של מספר עשרוני), ו-char לתווים יחידים של טקסט. יש טבלה (לינק) מפורטת יותר בפוסט על משתנים.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;שימו לב ששלושה מהטיפוסים האלה הם מספריים - int, long ו-double; שניים מהם מייצגים מספרים שלמים, אך אחד מסוגל להכיל טווח יותר גדול של שלמים, והשלישי מסוגל להכיל מספרים עשרוניים. אלו הטיפוסים שאתמקד בהם היום כדי להעביר את הנקודה שאני רוצה להעביר היום לגבי קאסטינג. יש גם קאסטינג שקשור ב-char והוא יהיה בפוסט משלו שמוקדש ספציפית למהות של char (ובנוסף, למי שהמשפט הזה אומר לו משהו - אני מתעסק היום רק בקאסטינג בין טיפוסים פרימיטיביים, כך שיש עוד סוגי קאסטינג שאני לא נוגע בהם בפוסט הזה. למי שהמשפט הזה לא אומר לו כלום, אל תדאגו).&lt;/p&gt;
+
+&lt;h1 id=&quot;קאסטינג-מ-int-ל-double&quot;&gt;קאסטינג מ-int ל-double&lt;/h1&gt;
+
+&lt;p&gt;אז נגיד שיש לי משתנה int - לצורך העניין נגיד ששמו myInt. מה שלא יהיה הערך בו כרגע, בין אם זה 0 או 4661 או מינוס 31415, זה בטוח מספר שלם (זה מה שמבטיח משתנה int), ולכן זה גם מספר עשרוני. כלומר, &lt;strong&gt;מתמטית&lt;/strong&gt;, אין שום הבדל בין 37 ל-37.0 - זה אותו מספר בדיוק. אז אם יש לי משתנה myDouble מסוג double, הגיוני שאוכל להכניס אליו את מה שיש בתוך myInt, מה שזה לא יהיה כרגע, כי כל מספר שלם הוא גם מספר עשרוני. ואכן, הקוד הבא ב-Java &lt;strong&gt;מתקמפל&lt;/strong&gt;, כלומר, מבחינת Java, הוא תקין והגיוני:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myInt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14142&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myDouble&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ומה יהיה הערך של myDouble אחרי ההשמה הזו? התשובה פשוטה - $14142.0$.&lt;/p&gt;
+
+&lt;h1 id=&quot;קאסטינג-מ-double-ל-int&quot;&gt;קאסטינג מ-double ל-int&lt;/h1&gt;
+
+&lt;p&gt;אבל כיוון ש-14142.0 הוא בתכלס מספר שלם, שרק יש לו את &lt;strong&gt;הצורה&lt;/strong&gt; של מספר עשרוני, הגיוני שנוכל לעשות גם את הכיוון ההפוך -&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myInt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14142&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myDouble&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backToInt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myDouble&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;אבל &lt;strong&gt;לא&lt;/strong&gt; - הקוד הזה &lt;strong&gt;לא מתקמפל&lt;/strong&gt; - מבחינת Java, השורה האחרונה בו &lt;strong&gt;לא הגיונית&lt;/strong&gt;. אני ואתם יודעים שכאשר Java תגיע לשורה הזו, myDouble יכיל את 14142.0 ועבורנו זה יהיה הגיוני ש-backToInt פשוט יקבל את הערך 14142.0, אבל כל מה ש-Java יודעת הוא ש-myDouble מכיל ערך עשרוני &lt;strong&gt;כלשהו&lt;/strong&gt;, שיכול גם להיות 3.5. אז מה עושים? ובכן, הביטו בשינוי הבא בקוד:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myInt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14142&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myDouble&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backToInt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myDouble&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;הוספתי את המילה int בסוגריים לפני הערך שאותו רוצה להכניס ל-backToInt. המשמעות של זה היא “ל-myDouble אמנם אין ‘צורה’ של int, אבל ‘תמעך’ אותו לצורה של int ואת זה תכניס ל-backToInt”. &lt;strong&gt;הפעולה הזו, של העברה בין צורות, היא קאסטינג (casting)&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;קאסטינג-מפורש-מול-מרומז&quot;&gt;קאסטינג מפורש מול מרומז&lt;/h1&gt;
+
+&lt;p&gt;בואו נחזור לקוד הראשון, שבו הכנסנו ערך של int לתוך משתנה מסוג double:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myInt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14142&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myDouble&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;מבחינת Java, הצורות int ו-double הן צורות שונות. Java &lt;strong&gt;מאפשרת&lt;/strong&gt; לנו לכתוב “הכנסה” של int ל-double בלי לכתוב את זה במפורש, אבל האמת היא שמאחורי הקלעים Java מעמידה פנים שהקוד שלנו מכיל קאסטינג במפורש:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myInt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14142&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myDouble&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;שפת Java מקלה עלינו בכך שאת הקאסטינג מ-int ל-double היא מבינה גם במרומז, אבל מבחינתה, בין אם כתבנו את ההמרה במפורש (כמו הקוד האחרון) או שלא במפורש (כמו הקוד שמעליו), זה אותו קאסטינג. אם אנחנו כותבים בפירוש את הקאסטינג, כלומר כן כוללים בקוד את הסוגריים עם שם הטיפוס שאליו ממירים לפני הערך שאותו ממירים, זה נקרא &lt;strong&gt;קאסטינג מפורש (explicit casting)&lt;/strong&gt;, ואם לא נכתוב אותו במפורש, זה נקרא &lt;strong&gt;קאסטינג מרומז (implicit casting)&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;אז למה Java לא מאפשרת לנו קאסטינג במרומז גם בכיוון השני? כלומר, למה בקוד הזה -&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;someDouble&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;someInt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;someDouble&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;אם אסיר את ה-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(int)&lt;/code&gt;, תתקבל שגיאת קומפילציה? למה Java, כאשר ממירים מ-double ל-int, &lt;strong&gt;מחייבת&lt;/strong&gt; אותנו לעשות קאסטינג במפורש? את התשובה התחלתי קודם - כי אמנם אני ואתם יודעים שבמקרה הזה, כאשר נגיע לשורה הזו, someDouble יכיל 1.0 שהוא מספר שלם ב”צורה” של עשרוני, אבל הקומפיילר של Java לא יודע את זה. כל מה שהקומפיילר רואה הוא שלביטוי myDouble יש צורה של double ולכן מבחינתו יכול להיות שיהיה שם בכלל 3.01 או 8.9 או 4.5. לכן, כשקבעו איך Java תעבוד ומה ייחשב לחוקי ולא חוקי בה, קבעו שבהמרה של double ל-int יהיה &lt;strong&gt;חובה&lt;/strong&gt; לעשות אותה מפורשת. ולמה דווקא בכיוון הזה? כי זה הכיוון שאינו ברור מאליו. אמרנו שברור שכל מספר שלם יהפוך למספר העשרוני ששווה לו, אבל לא לכל מספר עשרוני יש מספר שלם ששווה לו בדיוק. ואם כבר -&lt;/p&gt;
+
+&lt;h1 id=&quot;קאסטינג-מ-double-ל-int-כאשר-המספר-לא-שלם&quot;&gt;קאסטינג מ-double ל-int כאשר המספר לא שלם&lt;/h1&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;12.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.01&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;9.9999&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;מה יהיו הערכים של a, b, c ו-d? התשובה: a, באופן לא מפתיע (שכבר דיברנו עליו), יהיה 12. גם לא מפתיע ש-b יהיה 3. במשתנה c יהיה 4 - כלומר 4.5 עוגל למטה - ובמשתנה d יהיה… 9. כן, 9.9999 הרבה יותר קרוב ל-10 מאשר ל-9, אבל ב-Java, כל מספר עשרוני שאינו שלם &lt;strong&gt;בדיוק&lt;/strong&gt;, יעוגל &lt;strong&gt;למטה&lt;/strong&gt; אם נעשה לו קאסטינג ל-int.&lt;/p&gt;
+
+&lt;p&gt;כל זה נכון לגבי מספרים עשרוניים &lt;strong&gt;חיוביים&lt;/strong&gt;. מספרים עשרוניים &lt;strong&gt;שליליים&lt;/strong&gt; שאינם שלמים בדיוק, מעוגלים כולם &lt;strong&gt;למעלה&lt;/strong&gt; כאשר עושים להם קאסטינג ל-int.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 0&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 0&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;8.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// -8&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;9.9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// -9&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;כל הדברים שאמרנו כאן בין int ל-double נכונים גם בין long ל-double (תזכורת - long, כמו int, הוא טיפוס של מספרים שלמים, אבל כזה שתומך במספרים גדולים יותר; יש מספרים שהם גדולים מדי כדי להיכנס ל-int): כאשר עוברים מהמספר השלם לעשרוני, ניתן לעשות זאת במרומז, ובכיוון האחר, חייבים להיות מפורשים, ומספרים יעוגלו.&lt;/p&gt;
+
+&lt;h1 id=&quot;קאסטינג-בין-int-ל-long&quot;&gt;קאסטינג בין int ל-long&lt;/h1&gt;
+
+&lt;p&gt;אם כבר הזכרנו את long, מה איתו? קודם כל, כמו שהצורה של int ב-Java שונה מזו של double, גם long זו צורה בפני עצמה. קודם כל, אם אנחנו רוצים לכתוב מספר שלם בתור long ב-Java, נסיים את המספר ב-L (גם l קטנה היא חוקית, אבל לדעתי, ולא רק לדעתי, עדיף L גדולה), למשל:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;five&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;אם &lt;strong&gt;לא&lt;/strong&gt; נסמן L, הפקודה הזו עדיין תהיה חוקית:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;five&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;אבל ל-5 כאן יש “צורה” של int כי הוא בלי ה-L ולכן שוב יש לנו כאן קאסטינג מרומז. כלומר, Java מתייחסת לקוד הזה בתור:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;five&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ואז, בתוך המשתנה five יהיה 5L, כלומר 5 בתור long.&lt;/p&gt;
+
+&lt;p&gt;אז בין int ל-long יש המרה מרומזת, והסיבה לכך היא שברור איך כל int יהפוך ל-long: הוא פשוט יהיה אותו ערך מספרי, אבל ב”צורה” של long.&lt;/p&gt;
+
+&lt;p&gt;וכמו שאפשר לנחש, בכיוון השני ההמרה חייבת להיות מפורשת:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;asLong&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;asInt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;asLong&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;אילו היינו מוחקים את ה-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(int)&lt;/code&gt;, התוכנית לא הייתה מתקמפלת. זה כי לא כל long יכול “להיכנס” ל-int.&lt;/p&gt;
+
+&lt;p&gt;המספר החיובי הגדול ביותר שאפשר להכניס ב-int הוא $2^{31} - 1 = 2147483647$ (לא משנה עכשיו מה קורה כשעושים על זה פעולות חשבוניות כמו להוסיף 1). כלומר, 2147483647 “נכנס” ב-int, אבל 2147483648 לא. לעומת זאת, המספר הזה כן יכול להיכנס ב-long (ואז נחשוב עליו בתור 2147483648L). ומה אם נמיר את המספר הזה ל-int?&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tooLargeForInt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2147483648L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;asInt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tooLargeForInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;asInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;הפלט של התוכנית הזו הוא $-2147483648$. הסיבה לכך חורגת ממטרת הפוסט הזה (ספוילר למי שמעוניין: הסיבה לכך היא גם התשובה לשאלה שדילגתי עליה למעלה, של מה קורה אם מוסיפים 1 למספר הכי גדול שאפשר להכניס ל-int). &lt;strong&gt;המסקנה&lt;/strong&gt; שיש לי עבורכם מזה היא שיש להיזהר כשממירים מ-long ל-int. אם הגעתם לזה בקוד, ייתכן שדברים מסוימים שיהיו long היו יכולים וצריכים להיות int, או להפך.&lt;/p&gt;
+
+&lt;h2 id=&quot;עוד-טיפוסים-של-מספרים&quot;&gt;עוד טיפוסים של מספרים&lt;/h2&gt;
+
+&lt;p&gt;יש עוד טיפוסים של מספרים שלמים. ספציפית, יש עוד שני גדלים של מספרים שלמים: int הוא מספיק לרוב המטרות, ויש פעמים שצריך את long שתומך ביותר מספרים. אבל יש גם גדלים של מספרים יותר קטנים מ-int: הטיפוס short תומך במספרים בין $-32768$ ל-$32767$, ו-byte תומך במספרים בין $-127$ ל-$128$. למה זה טוב? זה בגלל הסיבה שיש בכלל טיפוסים שונים של מספרים שלמים - הטיפוסים השונים האלה תופסים גדלים שונים בזיכרון. יש אנשים שעבורם short ו-byte הם רלוונטיים, אבל עבורנו, int כמעט תמיד יהיה מתאים, וברוב שאר המצבים, נצטרך long.&lt;/p&gt;
+
+&lt;p&gt;הקאסטינג בין טיפוסי השלמים השונים הם כמו בין int ל-long: מהטיפוס ה”גדול” ל”קטן” חייבים להיות מפורשים, בכיוון השני זה אופציונלי. אבל שוב, זה לא ממש משנה. לשם השלמות אציין שיש גם עוד טיפוס של מספר עשרוני חוץ מ-double והוא נקרא float - הטיפוס double תומך במספרים גדולים יותר (וביותר ספרות אחרי הנקודה), ולכן היחס בין double ל-float הוא כמו היחס בין long ל-int. אבל גם float לא מאוד משנה לנו.&lt;/p&gt;
+
+&lt;div class=&quot;notice&quot;&gt;
+&lt;h1 id=&quot;נקודות-עיקריות&quot;&gt;נקודות עיקריות&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;קאסטינג היא המרה בין טיפוסים&lt;/li&gt;
+  &lt;li&gt;יש שתי אפשרויות לקאסטינג: מפורש (explicit) או מרומז (implicit)&lt;/li&gt;
+  &lt;li&gt;התחביר של קאסטינג מפורש הוא סוגריים ובהם שם הטיפוס שאליו ממירים ואחריו הביטוי שאותו ממירים&lt;/li&gt;
+  &lt;li&gt;קאסטינג מרומז הוא בדיוק מה שזה נשמע - הוא מרומז - התחביר שלו הוא שלא כותבים אותו בפירוש, ו-Java “מבינה” שהוא שם.&lt;/li&gt;
+  &lt;li&gt;קאסטינג בין int ל-double או בין long ל-double יכול להתבצע גם במרומז&lt;/li&gt;
+  &lt;li&gt;קאסטינג בין double ל-int או בין double ל-long חייב להיות מפורש, והוא מעגל את המספרים כלפי מטה אם הם חיוביים, ומעגל אותם כלפי מעלה אם הם שליליים (כלומר, זה לאו דווקא יעגל למספר השלם הכי קרוב).&lt;/li&gt;
+  &lt;li&gt;יש עוד טיפוסי שלמים ויש גם קאסטינג ביניהם (אבל לרוב זה לא מעניין אותנו)&lt;/li&gt;
+  &lt;li&gt;יש גם עוד טיפוס של מספרים עשרוניים חוץ מ-double ויש גם קאסטינג ביניהם (וגם זה לרוב לא מעניין אותנו)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;</content><author><name>יובל דולב</name></author><category term="צעדים ראשונים בג'אווה" /><category term="משתנים" /><category term="טיפוסים" /><category term="קאסטינג" /><summary type="html">מהו קאסטינג (casting) ב-Java</summary></entry><entry><title type="html">final וקבועים</title><link href="http://localhost:4000/2023/10/04/final/" rel="alternate" type="text/html" title="final וקבועים" /><published>2023-10-04T00:00:00+03:00</published><updated>2023-10-04T00:00:00+03:00</updated><id>http://localhost:4000/2023/10/04/final</id><content type="html" xml:base="http://localhost:4000/2023/10/04/final/">&lt;h1 id=&quot;final&quot;&gt;final&lt;/h1&gt;
+
+&lt;p&gt;לאחר הפוסט הקודם על משתנים, אני רוצה להוסיף דבר קטן שבדרך כלל לא מלמדים בנקודה הזו, אבל אני מתחיל לחשוב שיכול להיות שימושי לראות כבר עכשיו. זו נקודה קטנה ולא מאוד מסובכת, והיא לפעמים מופיעה בהמשך בלי הסבר.&lt;/p&gt;
+
+&lt;p&gt;כאשר מצהירים על משתנה ב-Java, ניתן לסמן את המילה final לפני שם הטיפוס. המילה final הופכת את המשתנה ממשתנה לקבוע - כלומר, למרות שזה טכנית עדיין נקרא “משתנה”, אי אפשר לשנות את הערך שלו.&lt;/p&gt;
+
+&lt;h2 id=&quot;למה-זה-טוב&quot;&gt;למה זה טוב?&lt;/h2&gt;
+
+&lt;p&gt;למשל, יש מקרים שבהם נרצה להשתמש בקבוע כלשהו שידוע מראש. למשל נגיד שאנחנו רוצים להפוך מספר כלשהו מאינצ’ים לסנטימטרים. הנוסחה היא שיש לכפול ב-2.54, שזה מספר הסנטימטרים באינץ’. ניתן לכתוב את השורה הרלוונטית כך:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimeters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.54&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;אבל השורה לא &lt;strong&gt;אומרת&lt;/strong&gt; מה המשמעות של 2.54. כמו שזה מופיע בקוד, זה “מספר קסם” - מספר שמופיע ב”אמצע” הקוד, סתם בתור מספר, ללא הסבר. ניתן להוסיף הערה (לפוסט על הערות, &lt;a href=&quot;http://localhost:4000/2024/04/02/comments//&quot;&gt;ראי כאן&lt;/a&gt;):&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimeters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.54&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// there are 2.54 centimeters in an inch&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;אבל מוטב פשוט להגדיר את זה כמשתנה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimetersInInch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.54&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimeters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimetersInInch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;אבל כיוון שהערך של ה”משתנה” הזה לא ישתנה במהלך הקוד, מוטב להגדיר אותו כ-final:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;CENTIMETERS_IN_INCH&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.54&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimeters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;CENTIMETERS_IN_INCH&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;שימו לב שגם שיניתי את צורת הכתיבה שבה אני כותב את שם המשתנה - זה לא הכרחי ב-Java, פשוט &lt;strong&gt;נהוג&lt;/strong&gt; לסמן קבועים באותיות גדולות. יש לי &lt;a href=&quot;http://localhost:4000/conventions&quot;&gt;דף ספציפי על מוסכמות ב-Java&lt;/a&gt; - צורות שבהן &lt;strong&gt;נהוג&lt;/strong&gt; לעשות דברים מסוימים ב-Java, ובכך בעיקר איך לתת שמות לדברים.&lt;/p&gt;
+
+&lt;p&gt;הסיבה להשתמש במילה final ב-Java היא כדי לסמן &lt;strong&gt;בעיקר לעצמנו&lt;/strong&gt; שאין סיבה הגיונית שהמשתנה ישתנה במהלך ריצת התוכנית. נגיד שבהמשך התוכנית המתכנתת רצתה לשנות את הערך של &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;centimeters&lt;/code&gt;, אבל טעתה בשם המשתנה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimetersInInch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.54&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimeters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimetersInInch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// ... in another part of the code&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;centimetersInInch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;314.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;בקוד זה לא סימנו את &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;centimetersInInch&lt;/code&gt; בתור final. הטעות אולי נראית קלה לזיהוי (במיוחד במקרה הזה שבו אמרתי מראש מה הבעיה), אבל התוכנית הזו עוברת קומפילציה, רצה, ואם לא נזהה את הטעות לפני שנריץ את הקוד, עשוי לקחת לנו יותר זמן לזהות אותה. אילו היינו מסמנים את &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;centimetersInInch&lt;/code&gt; כ-final, אותה שורה פשוט &lt;strong&gt;לא הייתה מתקמפלת:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimetersInInch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.54&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimeters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centimetersInInch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// ... in another part of the code&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;centimetersInInch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;314.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ❎ compilation error!&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;התוכנית &lt;strong&gt;לא תעבור קומפילציה בכלל&lt;/strong&gt; עד שנטפל בבעיה הזו - וזה &lt;strong&gt;דבר טוב&lt;/strong&gt;. שגיאות קומפילציה מזהות טעויות בלוגיקה של הקוד, אומרות שמשהו בקוד לא הגיוני.  מאותה סיבה שלהכניס מחרוזת למשתנה שנועד למספרים זה לא הגיוני, כך גם לא הגיוני לשנות “משתנה” שאמור להיות קבוע.&lt;/p&gt;
+
+&lt;p&gt;מתכנתים מתחילים חושבים לפעמים ששגיאות קומפילציה הן מעצבנות, ושפות שבהן יש פחות שגיאות קומפילציה הן יותר נוחות, אבל אחרי כמה זמן, מגלים ששגיאות קומפיליצה היו למעשה כל הזמן מנגנון בטיחות שעזר לנו להמנע מבעיות. בשנים האחרונות למשל יש ממש טרנד של לקחת שפות תכנות שאין בהן הרבה סוגים של שגיאות קומפילציה וממש להוסיף עליהן את האופציה לקבל שגיאות קומפילציה על קוד שעשוי להיות בעייתי.&lt;/p&gt;
+
+&lt;p&gt;הדוגמה הכי בולטת לזה היא עלייתה של שפת תכנות בשם TypeScript. שפת TypeScript מוסיפה שגיאות קומפילציה לשפה בשם JavaScript, שפה שימושית מאוד שלמרות שמה, כל קשר בינה לבין שפת Java שאנחנו לומדים כאן הוא מקרי לחלוטין. עלייתה של TypeScript הופכת אותה לאחת משפות התכנות הכי צומחות בשנים האחרונות - על פי &lt;a href=&quot;https://www.jetbrains.com/lp/devecosystem-2022/&quot;&gt;סקר של חברת JetBrains&lt;/a&gt; ב-2022, כ-34% מהמתכנתים בעולם משתמשים בה, וכ-7% נוספים מתכוונים להשתמש בה בקרוב.&lt;/p&gt;
+
+&lt;div class=&quot;notice&quot;&gt;
+&lt;h1 id=&quot;נקודות-עיקריות&quot;&gt;נקודות עיקריות&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ראינו מהם קבועים ב-Java - ובפרט שהם “משתנים שלא משתנים” (מעט אוקסימורון)&lt;/li&gt;
+  &lt;li&gt;ראינו למה זה טוב&lt;/li&gt;
+  &lt;li&gt;ראינו שכדי להפוך משתנה לקבוע, מוסיפים את המילה final&lt;/li&gt;
+  &lt;li&gt;ראינו איך נהוג לתת שמות לקבועים&lt;/li&gt;
+  &lt;li&gt;ראינו שהשמה לקבוע שאינה ההשמה הראשונה גורמת לשגיאת קומפילציה, ושזה דבר טוב&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;</content><author><name>יובל דולב</name></author><category term="צעדים ראשונים בג'אווה" /><category term="משתנים" /><category term="טיפוסים" /><category term="final" /><category term="קבועים" /><category term="מספרי קסם" /><summary type="html">נקודה קצרה על קבועים, המילה final ומשתנים שלא משתנים</summary></entry><entry><title type="html">משתנים</title><link href="http://localhost:4000/2023/10/03/variables/" rel="alternate" type="text/html" title="משתנים" /><published>2023-10-03T00:00:00+03:00</published><updated>2023-10-03T00:00:00+03:00</updated><id>http://localhost:4000/2023/10/03/variables</id><content type="html" xml:base="http://localhost:4000/2023/10/03/variables/">&lt;p&gt;משתנים הם מהכלים השימושיים ביותר ברוב שפות התכנות. משתנים מאפשרים לנו לעבוד עם נתונים ולעבוד איתם. “נתונים” אולי נשמע כמו משהו שרק מתכנתים שעוסקים בסטטיסטיקות צריכים לעבוד איתו, אבל “נתונים” זה דבר הרבה יותר רחב - “נתונים” עבורנו זה גם “האם הנהגת בדיוק לחצה על הכפתור בג’וסיטיק שלה שאמור לגרום לרובוט לבלום”, או “מה המהירות הנוכחית של הרובוט”, “מה המצלמה רואה” ו”איזו מהירות לשלוח למנוע של מערכת הירייה”, וכל מיני דברים נוספים.&lt;/p&gt;
+
+&lt;p&gt;לא כל “נתון” יקבל אצלנו “משתנה”, אבל משתנים הם דרך חשובה לעבוד עם נתונים. למשתנים ב-Java יש &lt;strong&gt;שם וטיפוס&lt;/strong&gt;. נתחיל מהשם.&lt;/p&gt;
+
+&lt;h1 id=&quot;שמות-של-משתנים&quot;&gt;שמות של משתנים&lt;/h1&gt;
+
+&lt;p&gt;הקומפיילר של Java &lt;u&gt;מחייב&lt;/u&gt; אותנו לכללים מסוימים לשמות של משתנים. &lt;a href=&quot;http://localhost:4000/2024/03/29/java-structure/#כללים-מחייבים-לכל-השמות-identifiers-ב-java/&quot;&gt;כבר הזכרתי את החוקים האלה כאן בעבר בהקשר אחר, כי הם נכונים גם לכל הדברים שנקראים “שמות” ב-Java,&lt;/a&gt;אבל הנה הם שוב:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;שמות יכולים לכלול &lt;strong&gt;רק&lt;/strong&gt;: אותיות (קטנות וגדולות), קו תחתון (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_&lt;/code&gt;), סימן הדולר (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;) וספרות
+    &lt;ul&gt;
+      &lt;li&gt;שימו לב שזה אומר &lt;strong&gt;שאסורים רווחים&lt;/strong&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; &lt;/code&gt;)&lt;/li&gt;
+      &lt;li&gt;בתאוריה מותרות גם אותיות שלא באנגלית כמו למשל יוונית או עברית אבל יש להמנע מזה&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;אסור להתחיל שם בספרה&lt;/li&gt;
+  &lt;li&gt;ישנה רשימת &lt;strong&gt;מילים שמורות&lt;/strong&gt; (reserved keywords) שיש להן משמעות מיוחדת ב-Java ואי אפשר להשתמש בהן כשמות ב-Java. המילה &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package&lt;/code&gt; היא אחת מהן, כמו כן מילים נוספות שראינו בפוסט הזה: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;static&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;void&lt;/code&gt;. הרשימה המלאה (והלא מאוד ארוכה) &lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html&quot;&gt;כאן, באתר הרשמי של Java&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;בנוסף, יש כללים לא מחייבים בשם &lt;strong&gt;קונבנציות&lt;/strong&gt; (מוסכמות), והם:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;שמות צריכים להיות משמעותיים&lt;/li&gt;
+  &lt;li&gt;שמות מתחילים באותיות קטנות. אם יש יותר ממילה אחת, אז כל מילה למעט הראשונה מתחילה באות גדולה. שאר האותיות קטנות. אני מדגיש - גם כשיש יותר ממילה אחת וגם כשלא, המילה הראשונה מתחילה באות קטנה. סגנון זה נקרא &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;camelCase&lt;/code&gt;, כי האותיות הגדולות שמוקופות באותיות קטנות נראות כמו דבשות של גמל.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;יש לי &lt;a href=&quot;http://localhost:4000/conventions&quot;&gt;עמוד שאני מרכז בו קונבנציות ב-Java.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;טיפוסים-של-משתנים&quot;&gt;טיפוסים של משתנים&lt;/h1&gt;
+
+&lt;p&gt;Java היא שפה שבה למשתנים יש טיפוסים. טיפוס (type) הוא סוג המידע שיכול להיות במשתנה. יש למשל טיפוס בשם int שבו ניתן לאחסן מספרים שלמים (גם חיוביים, גם אפס וגם שליליים - עד גודל מסוים). ויש טיפוס בשם double שבו ניתן לאחסן מספרים שאינם בהכרח שלמים (עד רמת דיוק מסוימת). ויש גם עוד.&lt;/p&gt;
+
+&lt;h2 id=&quot;כמה-טיפוסים-בסיסיים-ב-java&quot;&gt;כמה טיפוסים בסיסיים ב-Java&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;שם הטיפוס&lt;/th&gt;
+      &lt;th&gt;משמעות&lt;/th&gt;
+      &lt;th&gt;ערכים אפשריים&lt;/th&gt;
+      &lt;th&gt;הערות&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;int&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;מספרים שלמים&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;0,   -1, 5, 4319&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;double&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;מספרים עשרוניים&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;0.0,   -0.1,-9876.7, 123.54&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;שימו לב שגם כשהמספר שלם אני כותב אותו עם “נקודה 0” כדי להראות שהוא ב”צורת” double ולא ב”צורת” int. למספר 0.0 יש אותו ערך כמו ל-0 אבל “צורה” שונה.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;char&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;תו (אחד) של טקסט&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'a'&lt;/code&gt;,   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'A'&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;' '&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'+'&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'א'&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'α'&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'ﷺ'&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'ﭏ'&lt;/code&gt;,’&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'🗾'&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;שימו לב שאני מייצג כל תו מוקף בגרש יחיד משני הצדדים&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;boolean&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;ערך אמת –   “כן”/”לא”&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;true,   false&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;long&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;מספרים שלמים (בטווח יותר גדול)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;0L,   1234L, 5534023222112865483L,&lt;/strong&gt;    &lt;strong&gt;-5270498306774157604L&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;שימו לב שאני מסיים את המספר ב-L כדי להבדיל אותו מ-int. כמו ההבדל בין int ל-double, למספר 1L יש אותו ערך כמו ל-1 אבל “צורה” שונה.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;String&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;טקסט – רצף של תווים&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;“”,   “Hello world”&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;שימו לב שהטקסט מוקף במרכאות משני הצדדים (אין להתבלבל בין מרכאות - מה שנקרא באנגלית double quotes, לבין גרשיים, מה שנקרא באנגלית single quotes)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;אנלוגיה-למשתנים&quot;&gt;אנלוגיה למשתנים&lt;/h2&gt;
+
+&lt;p&gt;אני משתמש בצעצוע הילדים הזה המוכר לכולנו (אני מקווה) כאנלוגיה למשתנים:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/2024/04/03/toy.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;מזהים? ילדים אמורים להתרגל לקונספט של צורות על ידי כך שהם מוציאים ומכניסים צורות שונות לחורים השונים ורואים מה מסתדר. ובכן, באנלוגיה הזו, הטיפוס הוא כמו צורה, למשל נדמיין int בתור צורת עיגול ו-char בתור צורת ריבוע. משתנים הם כמו החורים בצעצוע בצורות השונות. לחור בצורת עיגול ניתן להכניס גלילים שונים, ועל הגלילים השונים שאפשר להכניס לחור הזה אפשר לחשוב בתור ערכים שונים מאותה צורה. בצעצועים האלה בדרך כלל יש רק צורה אחת לכל חור, אבל אף אנלוגיה מושלמת.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/2024/04/03/toy2.png&quot; style=&quot;max-width: 35%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;כעת, כשאנחנו יודעים על לחשוב על משתנים, אפשר לראות איך משתמשים בהם.&lt;/p&gt;
+
+&lt;h1 id=&quot;שימוש-במשתנים&quot;&gt;שימוש במשתנים&lt;/h1&gt;
+
+&lt;h2 id=&quot;הצהרה&quot;&gt;הצהרה&lt;/h2&gt;
+
+&lt;p&gt;ראשית, כדי שיהיה לנו משתנה עם טיפוס מסוים ועם שם מסוים, צריך להצהיר עליו. הצהרה על משתנה היא מה שאומר ל-Java “אני רוצה שיהיה לי משתנה עם השם הזה ועם הטיפוס הזה”. המבנה של פקודת הצהרה היא:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;typename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;varname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;כאשר &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;typename&amp;gt;&lt;/code&gt; מציין את שם הטיפוס ו-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;varname&amp;gt;&lt;/code&gt; מציין את שם המשתנה (הסימנים &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt; הם לא חלק מהקוד - אני משתמש בהם כדי לציין “הנה אלמנט בקוד”). לדוגמה, השורה הבאה מצהירה על משתנה בשם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;price&lt;/code&gt; מסוג &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;double&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;שימו לב שהצהרה מסתיימת בנקודה-פסיק. זה כי מבחינתנו זוהי פקודה, וכמו שדיברנו &lt;a href=&quot;http://localhost:4000/2024/04/01&quot;&gt;בפוסט על פקודות פלט&lt;/a&gt;, פקודות מסתיימות בנקודה-פסיק.&lt;/p&gt;
+
+&lt;h2 id=&quot;השמה&quot;&gt;השמה&lt;/h2&gt;
+
+&lt;p&gt;לאחר שמשתנה מוגדר, ניתן להכניס ערכים לתוכו - זה נקרא &lt;strong&gt;השמה&lt;/strong&gt;. השמה היא סוג של פקודה, והמבנה שלה הוא כזה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;varname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;כאשר &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;varname&amp;gt;&lt;/code&gt; הוא שם המשתנה ו-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;value&amp;gt;&lt;/code&gt; הוא הערך אותו אנחנו רוצים להכניס למשתנה. אם המשתנה הוא למשל מטיפוס char (תו יחיד של טקסט), אז אפשר ש-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;value&amp;gt;&lt;/code&gt; יהיה למשל &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'a'&lt;/code&gt; או &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;' '&lt;/code&gt;; אם המשתנה הוא מטיפוס int, אפשר להכניס לתוכו מספר שלם (שאינו גדול מדי ל-int), או חישוב שהתוצאה שלו היא מספר שלם, כמו &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1 + 2 * 9&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;לדוגמא, בקוד הבא אני מכריז על שני משתנים, ומשים לשניהם ערכים:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;teamNumber&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;teamNumber&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;613&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myNameInitial&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;myNameInitial&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'Y'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;כדאי להבהיר שלמרות שמופיע פה הסימן &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;, זו לא משוואה מתמטית. בשפת Java, המשמעות של:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;אינה המשוואה $x = 5$, אלא הפקודה “הכנס את הערך 5 לתוך המשתנה 5”. אפשר לחשוב על ה-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; כאילו למרות שמדובר בסימן של שוויון מתמטי, המשמעות היא “חץ שמאלה”, כלומר לדמיין שאנחנו רואים בעצם את השורה הבאה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;חשוב לציין - בJava זה לא יעבוד - זו רק צורה לדמיין את זה. למרות שיש שפות שבהן משתמשים בסימון הזה במקום בסימן &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; להשמה למשתנים (למשל שפת R), שפת Java היא לא אחת מהן. בכלל, ברוב השפות שבשימוש היום, הסימון הוא כמו של Java (לא ש-Java הייתה הראשונה שעשתה זאת).&lt;/p&gt;
+
+&lt;p&gt;בקיצור, פשוט צריך להתרגל לזה שב-Java, השורה &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;;x = 5&lt;/code&gt; נראית כמו משוואה, אבל היא לא, היא פקודת השמה. מתרגלים לזה די מהר.&lt;/p&gt;
+
+&lt;h2 id=&quot;השמה-שגויה-לא-מתקמפלת&quot;&gt;השמה שגויה לא מתקמפלת&lt;/h2&gt;
+
+&lt;p&gt;יש סיבה לכך ש-Java מכריחה אותנו להצמיד טיפוסים למשתנים, והיא - Java יכולה למנוע מאיתנו לעשות השמות לא הגיוניות. לערך שמשימים למשתנה יש טיפוס משל עצמו, וכאמור, הוא צריך להתאים לצורה של המשתנה. ל-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;276.5 * 8&lt;/code&gt; יש צורה של double, ולכן, אי אפשר להכניס אותו ל-int. נסיון לעשות זאת יהווה שגיאת קומפילציה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;276.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ❎ does not compile&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;שפת Java תסמן לנו את השורה הבעייתית בקו אדום ותגיד שההוראה הזו לא הגיונית. מבחינת Java, הפקודה הזו הגיונית באותה מידה כמו שהמשפט “קח את בקבוק הבושם הזה ותשתמש בו בתור רמזור” הגיונית לבן-אדם, כלומר: בכלל לא. Java לא מבינה מה אנחנו רוצים ממנה. &lt;strong&gt;וזה דבר טוב. שגיאות קומפילציה הן מנגנון בטיחות שימושי מאוד.&lt;/strong&gt; אי אפשר להפוך את התוכנית הזו למשהו ניתן-להרצה לפני שנטפל בטעות ההגיון הזו. המשתנה number נועד לדברים עם צורה של מספר שלם.&lt;/p&gt;
+
+&lt;h2 id=&quot;תחביר-מקוצר---הצהרה-והשמה&quot;&gt;תחביר מקוצר - הצהרה והשמה&lt;/h2&gt;
+
+&lt;p&gt;כמעט תמיד נרצה לבצע את ההשמה הראשונה למשתנה מיד אחרי הצהרתו, כמו בדוגמאות בקוד למעלה. לצורך כך, יש תחביר מקוצר שעושה את שני הדברים האלה בשורה אחת:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;typename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;varname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;למשל את הקוד למעלה אפשר לקצר לשתי שורות:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;teamNumber&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;613&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myNameInitial&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myNameInitial&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'Y'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+    &lt;details open=&quot;&quot;&gt;
+        &lt;summary&gt;
+            &lt;u class=&quot;java-python-header&quot;&gt;Java לדוברות פייתון&lt;/u&gt;
+            &lt;p class=&quot;java-python-description&quot;&gt;
+                חלק מהתלמידות שלי מגיעות עם רקע של פייתון. מדי פעם אני משווה בין Java לפייתון כדי לעזור להן להבין את
+                Java. 
+                חלונית זו רלוונטית רק למי שמגיעה מרקע של פייתון וניתן לפתוח ולסגור אותה בעזרת המשולש בצד.
+            &lt;/p&gt;
+            &lt;hr /&gt;
+        &lt;/summary&gt;
+        
+&lt;p&gt;יש שני הבדלים עיקריים בין פייתון ל-Java כשמדובר במשתנים. האחת, היא שבפייתון לא מצהירים על משתנים. ברגע שעושים פקודת השמה, המשתנה קיים. מיד לאחר השורה:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;team_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4319&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;המשתנה &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;team_number&lt;/code&gt; קיים וערכו 4319. בנוסף, בפייתון לא מצמידים טיפוסים למשתנים, וכתוצאה, אפשר להחליף את הערך של משתנה בין טיפוסים שונים:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;team_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# now it's a whole number
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;team_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# now it's a string (text)
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;החל מפייתון 3, יש מנגנון מסוים של טיפוסים למשתנים בפייתון, אבל הוא אופציונלי, והוא לא מעניין אותנו (בעיקר כי אנחנו עוסקים ב-Java; אני מציג פייתון רק כהשוואה למי שמגיעה מפייתון, ולרוב כשלומדים פייתון במסגרות תיכוניות לא מלמדים את המנגנון הזה, שהוא גם חדש יחסית. מי שבכל זאת מתעניינת יכולה לקרוא על זה &lt;a href=&quot;https://docs.python.org/3/library/typing.html&quot;&gt;כאן&lt;/a&gt;).&lt;/p&gt;
+
+
+    &lt;/details&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;קריאה-ממשתנה&quot;&gt;קריאה ממשתנה&lt;/h1&gt;
+
+&lt;h2 id=&quot;בפלט&quot;&gt;בפלט&lt;/h2&gt;
+
+&lt;p&gt;למדנו איך להשים (לכתוב) למשתנה, אבל יכולת לכתוב לא מאוד עוזרת בלי יכולת לקרוא: לאחר שהכנסנו ערך למשתנה, אנחנו רוצים גם להשתמש בערך הזה. דרך אחת להשתמש בערך של משתנה הוא בפלט. ראינו איך לעשות פלט של טקסט, אך כעת, אנחנו יכולים להשתמש גם במשתנים בפלט - אם משתנה מופיע בתוך System.out.print או System.out.println, אז Java בזמן הריצה תדפיס למסך את הערך של המשתנה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;כאשר נריץ את התוכנית הזו, יודפס למסך המספר 42.&lt;/p&gt;
+
+&lt;h2 id=&quot;בהשמה&quot;&gt;בהשמה&lt;/h2&gt;
+
+&lt;p&gt;אפשר להשים למשתנה אחד ערך של משתנה אחר:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;המשתנה x מעתיק את הערך שיש בתוך המשתנה y. כעת, ניתן לשנות את המשתנה y והערך &lt;u&gt;הקודם&lt;/u&gt; של y עדיין יהיה זמין לנו במשתנה x (כל עוד לא נשים משהו אחר לתוך x).&lt;/p&gt;
+
+&lt;p&gt;אפשר גם להשים את הערך של משתנה לתוך עצמו, אבל זה לא יעשה שום דבר משמעותי. שורה כזו היא תקינה ב-Java, הקומפיילר יסמן אותה לא כשגיאה, אלא כאזהרה - כלומר, הקומפיילר של Java יגיד לנו “אני &lt;em&gt;מסוגל&lt;/em&gt; להפוך את זה לקוד בר הרצה, אז אני אעשה את זה, אבל לרוב לא עושים דברים כאלה, יכול להיות שהתכוונת למשהו אחר?”. נסו את זה - כתבו פקודה של השמה של הערך של משתנה לתוך עצמו, ותראו ש-Java מסכימה לקמפל ולהריץ את הקוד, אבל מסמנת לכם קו צהוב מתחת לשורה הזו (במקום קו אדום שמסומן מתחת לשורות שגורמות לשגיאות קומפילציה).&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;שאלה למחשבה: בהינתן שני משתנים, x, y, איך ניתן להחליף בין הערכים שלהם, כך שהערך שהיה ב-x יהיה ב-y ולהפך?&lt;/p&gt;
+
+&lt;h2 id=&quot;בחישוב&quot;&gt;בחישוב&lt;/h2&gt;
+
+&lt;p&gt;אפשר לעשות חישובים שכוללים משתנים, ובתוצאה להשתמש בפלט, או בהשמה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cubed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;סימונים-מקוצרים&quot;&gt;סימונים מקוצרים&lt;/h2&gt;
+
+&lt;p&gt;לעתים קרובות נרצה להשים לתוך משתנה מספרי ערך שתלוי במשתנה עצמו, כלומר, לעדכן את המשתנה. לפעמים נרצה למשל להוסיף ביטוי מסוים למשתנה, כלומר:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;שפת Java מספקת לנו תחביר מקוצר לכך:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;שימו לב שמדובר בתחביר מקוצר - לא נוספה לנו יכולת חדשה בזה, אלא רק נוצרה דרך יותר קצרה ואולי גם יותר קריאה לכתוב משהו שכבר יכולנו לעשות.&lt;/p&gt;
+
+&lt;p&gt;בדומה, יש תחביר מקוצר לחסר, לכפול או לחלק משתנה בביטוי מסוים:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// short for:    var = var - &amp;lt;some expression&amp;gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// short for:    var = var * &amp;lt;some expression&amp;gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// short for:    var = var / &amp;lt;some expression&amp;gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ויש גם תחביר מקוצר לפעולה נוספת מאוד נפוצה - הוספה של 1 למשתנה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;היא פקודה מקוצרת ל-&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;שהוא בעצמו תחביר מקוצר ל-&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ובדומה, יש גם תחביר מקוצר לחיסור של 1 ממשתנה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;תקין גם לכתוב עם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;++&lt;/code&gt; או &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt; לפני המשתנה במקום אחרי:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;יש&lt;/strong&gt; הבדל מתחת למכסה המנוע, אבל הוא לא חשוב לנו. מבחינתנו, השורות האלה זהות, ואני ממליץ על התחביר הראשון (שבו ה-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;++&lt;/code&gt; או ה-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt; הוא אחרי המשתנה ולא לפניו). ואגב:&lt;/p&gt;
+
+&lt;div class=&quot;notice--danger&quot;&gt;
+&lt;p&gt;&lt;strong&gt;אפשר&lt;/strong&gt; להשתמש גם ב-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;++var&lt;/code&gt; או &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;++var&lt;/code&gt; או &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var--&lt;/code&gt; או &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--var&lt;/code&gt; גם בתור ביטוי, למשל:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;z&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;אני &lt;strong&gt;לא&lt;/strong&gt; הולך להסביר מה זה אומר, &lt;strong&gt;כי אני מתנגד לשימוש בזה&lt;/strong&gt;. זה נועד לחסוך שורת קוד, אבל זה דבר שהוא לא שימושי בעיניי. גם כשיודעים מה הוא אומר, הוא לא מאוד קריא בעיניי, ולכן הוא מפר את עיקרון Code for humans FIRST, comupters SECOND (עקרון שאומר שהקוד צריך להיות כמה שיותר מובן לקריאה). אני לא רק מתנגד לשימוש בו כשאני מלמד אנשים שחדשים בתכנות, אני גם נגד שימוש שלו בעולם האמיתי. זה עניין של דעה, אבל זו דעתי.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;הסיבה היחידה שאני מציין את זה בכלל&lt;/strong&gt; היא שאולי תיתקלו בזה אם תקראו קוד של אנשים אחרים, אז שתדעו שזה דבר שקיים. ואם תיתקלו בזה, תצטרכו לבדוק על מה ההבדל בין &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var++&lt;/code&gt; ל-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;++var&lt;/code&gt; וכל מיני כאלה. אבל ההמלצה שלי - בקוד שאתן כותבות, הימנעו משימוש ב-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var++&lt;/code&gt; או &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--var&lt;/code&gt; כחלק מביטוי. השמתמשו בדברים האלה &lt;strong&gt;רק כפקודות&lt;/strong&gt;, כלומר:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;כשורת קוד בפני עצמה - סבבה. להשתמש בזה כחלק מביטוי:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;z&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;את זה - לא.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;notice&quot;&gt;
+&lt;h1 id=&quot;נקודות-עיקריות&quot;&gt;נקודות עיקריות&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;הסברנו מהם משתנים&lt;/li&gt;
+  &lt;li&gt;ראינו שב-Java צריך להצהיר על משתנים, ועל הטיפוסים שלהם&lt;/li&gt;
+  &lt;li&gt;ראינו שטיפוסים של משתנים מוודאים שאנחנו משתמשים בדברים בצורה נכונה&lt;/li&gt;
+  &lt;li&gt;ראינו כמה טיפוסים בJava&lt;/li&gt;
+  &lt;li&gt;ראינו מהי השמה ואיך היא נראית ב-Java&lt;/li&gt;
+  &lt;li&gt;ראינו תחביר מקוצר להצהרה והשמה באותה שורה&lt;/li&gt;
+  &lt;li&gt;ראינו כמה דברים בסיסיים שאפשר לעשות עם משתנים ב-Java. בהמשך נצלול לזה לעומק יותר.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;</content><author><name>יובל דולב</name></author><category term="צעדים ראשונים ב-Java" /><category term="משתנים" /><category term="הצהרה" /><category term="טיפוסים" /><summary type="html">מהם משתנים, טיפוסים, הצהרות והשמות</summary></entry><entry><title type="html">קומנטים (הערות, תגובות)</title><link href="http://localhost:4000/2023/10/02/comments/" rel="alternate" type="text/html" title="קומנטים (הערות, תגובות)" /><published>2023-10-02T00:00:00+03:00</published><updated>2023-10-02T00:00:00+03:00</updated><id>http://localhost:4000/2023/10/02/comments</id><content type="html" xml:base="http://localhost:4000/2023/10/02/comments/">&lt;p&gt;כפי ששמתן לב, Java, כשפת תכנות, היא אמנם לא שפת מכונה בינארית, אבל היא גם לא בדיוק שפה אנושית מדוברת (אגב, אין להתבלבל בין שפת התכנות Java לבין &lt;a href=&quot;https://he.wikipedia.org/wiki/%D7%92%27%D7%90%D7%95%D7%95%D7%94_(%D7%A9%D7%A4%D7%94)&quot;&gt;שפה אנושית שגם לה קוראים Java&lt;/a&gt; שמדברים ב&lt;a href=&quot;https://he.wikipedia.org/wiki/%D7%92%27%D7%90%D7%95%D7%95%D7%94&quot;&gt;אי באינדונזיה שנקרא ג’אווה או יאווה&lt;/a&gt;). אנחנו עדיין לא יכולים למחשב קוד באנגלית (וכן, אני מודע היטב לקיומו של ChatGPT ושהוא טכנית יכול לכתוב קוד בשבילנו, אבל יש לי נסיון מסוים בתכנות וגם בחנתי הרבה את יכולות התכנות של ChatGPT ואני מרגיש בסדר לקבוע שלדעתי זה עדיין לא אומר שהגענו לשלב שבו אנגלית היא שפת תכנות). עסקתי בזה קצת גם &lt;a href=&quot;http://localhost:4000/2024/03/28/what-is-java/&quot;&gt;בפוסט העשרה על מהי שפת תכנות ומה מאפיין את Java&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;הנקודה שלי היא ש-Java מנסה ככל יכולתה להיות בסדר עבור מתכנתים, ולאפשר להם לכתוב קוד ברור שהם ושותפיהם לצוות יכולים לקרוא ולהבין ולהמשיך לתחזק. אבל זה לא מושלם, וגם המתכנתים עצמם לא תמיד כותבים קוד בצורה הכי ברורה שאפשר, ובכל זאת, בני אדם חושבים כנראה בשפות מדוברות (כמו עברית, אנגלית או ג’אווה מהסוג האינדונזי) לפני שהם חושבים בשפות תכנות (כמו פייתון, רובי ו-Java מהסוג שלנו). אז Java, כמו רוב (כל?) שפות התכנות מציעה דרך להוסיף &lt;strong&gt;טקסט על הקוד שהקומפיילר לא מסתכל עליו בכלל והוא לא חלק מהקוד שלנו, אלא הסבר על הקוד שנועד לעיניים אנושיות&lt;/strong&gt;. זה מה שנקרא &lt;strong&gt;תגובה, או הערה, ובאנגלית comments (ובאנגלית מעוברתת קומנטים) - כל המונחים האלה מתייחסים לאותו דבר&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;עכשיו כשהסברנו את הקונספט, נשאר רק להכיר את התחביר של תגובות (תחביר: הצורה שבה כותבים בשפת התכנות). יש שני סוגים.&lt;/p&gt;
+
+&lt;h2 id=&quot;תגובה-של-שורה-אחת-single-line-comment&quot;&gt;תגובה של שורה אחת (single-line comment)&lt;/h2&gt;
+
+&lt;p&gt;תגובה של שורה אחת מתחילה בשני סלאשים רצופים (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;//&lt;/code&gt;) ונמשך עד ירידת השורה הבאה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// single line comment, ends on line break.&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;שימו לב שיש שני סוגי סלאש - כאן מדובר בסלאש הזה - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;. הוא נקרא גם סלאש קדמי (forward slash), להבדיל מסלאש אחורי (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; - backward slash). ברוב המקלדות, כאשר המקלדת על אנגלית, מקש הסלאש הקדמי &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; נמצא על אותו מקש שבו בעברית נמצאת הנקודה (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt;). למי שסקרנית לגבי הסלאש האחורי (הוא משמש לדברים אחרים), המקש שלו לרוב נמצא ליד או מעל מקש ה-Enter. בנוסף, אם מקישים על המקש הזה בזמן שה-Shift לחוץ, זה מקליד את התו &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;, שלא רלוונטי כאן, אבל יהיה שימושי בהמשך.&lt;/p&gt;
+
+&lt;h2 id=&quot;תגובה-מרובת-שורות-multi-line-comment&quot;&gt;תגובה מרובת שורות (multi-line comment)&lt;/h2&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;ייתכן שהאתר “הופך” את מה שאני כותב בתוך המלבנים האפורים הקטנים באמצע טקסט (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;these things&lt;/code&gt;), ולמשל יכול להיות שאני כותב סלאש ואז כוכבית, אבל באתר זה נראה הפוך. אם כן, זו תקלה ואני מנסה לטפל בה. לכן, אני כותב גם בסוגריים ליד מה מה בא אחרי מה. בנוסף, כשיש לנו בלוק של קוד שהוא בפסקה משלו, שם התקלה הזו לא קורית.&lt;/p&gt;
+
+&lt;p&gt;תגובה מרובת שורות מתחילה ב-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/*&lt;/code&gt; (סלאש ואז כוכבית) ומסתיימת ב-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt; (כוכבית ואז סלאש). עד עד ה-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt; הסוגר, התגובה ממשיכה גם אם יש ירידות שורה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* this is
+a multi line
+comment */&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(הערה סגנונית: בקוד כאן למעלה התגובה מתחילה בשורה שיש בה קוד וגם נגמרת בשורה שיש בה קוד; זה לא מחייב ולרוב לא יהיה המקרה, זה לא מאוד נעים לעין במקרה הזה, אבל רציתי להדגים שזה אפשרי).&lt;/p&gt;
+
+&lt;p&gt;טכנית, תגובה שמתחילה ב-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/*&lt;/code&gt;  (סלאש ואז כוכבית) ונגמרת ב-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt; (כוכבית ואז סלאש) יכולה להתחיל ולהיגמר באותה שורה, וטכנית גם זו multi-line comment (תגובה מרובת שורות) מבחינת השם שלה. הנה דוגמה אפשרית (אבל גם היא לא בהכרח פרקטית):&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world&quot;&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* &amp;lt;- this is the text that will be printed */&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;כאן אנחנו רואים שוב את פקודת ההדפסה שמדפיסה “Hello world”, והפעם הוספנו תגובה שהיא טכנית תגובה מרובת-שורות, אבל כזו שמתחילה ונגמרת באותה שורה. שימו לב שאחרי סיום התגובה (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt; - כוכבית ואז סלאש) הקוד הוא שוב קוד Java שהוא חלק ממה שהקומפיילר כן מסתכל עליו - בפרט, הסוגר הסוגר (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;)&lt;/code&gt;) שסוגר את זה שנפתח אחרי המילה println, וסימן הנקודה-פסיק (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;;&lt;/code&gt;) שכל פקודה ב-Java צריכה להסתיים בו.&lt;/p&gt;
+
+&lt;p&gt;זה מקום טוב להזכיר שהקומפיילר מתעלם מההערות שלנו - הוא מעמיד פנים שהן לא שם, אין להן משמעות עבורו. כלומר, מבחינת Java, השורה למעלה היא &lt;strong&gt;בדיוק אותו דבר כמו&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;javadoc&quot;&gt;Javadoc&lt;/h3&gt;
+
+&lt;p&gt;יש תת-קטגוריה של multi-line comment שנקרא Javadoc. הוא מתחיל ב-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/**&lt;/code&gt; (סלאש ואז שתי כוכביות) ונגמר ב-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt; (כוכבית ואז סלאש) - שימו לב שזה, ממש בהגדרה, תת-קטגוריה של multi-line comment (כלומר עומד בתנאים). יש לזה שימוש מסוים, אבל נגיע אליו בהמשך. כרגע רציתי רק להגיד שזה קיים - אסביר את זה בהמשך.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
+Javadoc
+*/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;עברית בתאוריה מותרת בתגובות ב-Java, אבל מערכת ההפעלה או תוכנת עריכת הקוד עשויה לעשות בעיות עם זה. עדיף להתרגל לאנגלית.&lt;/p&gt;
+
+&lt;div class=&quot;notice&quot;&gt;
+&lt;h1 id=&quot;נקודות-עיקריות&quot;&gt;נקודות עיקריות&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;הסברנו למה שנרצה לכתוב הסברים באנגלית ליד הקוד שלנו&lt;/li&gt;
+  &lt;li&gt;ראינו מהן תגובות (עוד שמות: קומנטים, הערות, comments)&lt;/li&gt;
+  &lt;li&gt;הכרנו את התחביר, עם שתי האופציות שלו:
+    &lt;ul&gt;
+      &lt;li&gt;תגובת שורה אחת&lt;/li&gt;
+      &lt;li&gt;תגובה מרובת-שורות&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;</content><author><name>יובל דולב</name></author><category term="צעדים ראשונים בג'אווה" /><category term="קומנטים" /><category term="תיעוד" /><summary type="html">לפעמים אני חושב שהקומפיילר מתעלם מכל ההערות שלי (תקראו את הפוסט ותבינו את הבדיחה)</summary></entry><entry><title type="html">עכשיו באמת מתחילים - פלט ב-Java</title><link href="http://localhost:4000/2023/10/01/output/" rel="alternate" type="text/html" title="עכשיו באמת מתחילים - פלט ב-Java" /><published>2023-10-01T00:00:00+03:00</published><updated>2023-10-01T00:00:00+03:00</updated><id>http://localhost:4000/2023/10/01/output</id><content type="html" xml:base="http://localhost:4000/2023/10/01/output/">&lt;p&gt;אנחנו מתחילים ללמוד את שפת התכנות Java. מטרתנו היום היא להבין איך לבצע כמה דברים בסיסיים בג’אווה, ולהבין איך נראה קוד פשוט בשפה.&lt;/p&gt;
+
+&lt;h1 id=&quot;צאט-עם-המחשב&quot;&gt;צ’אט עם המחשב&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://localhost:4000/2024/03/29/java-structure/#טרמינל&quot;&gt;דיברתי על זה קצת גם בפוסט הקודם&lt;/a&gt;: פעם, מזמן, המחשב לא סיפק לנו ממשק שהוא ויזואלי באותה מידה שהוא היום. פעם, כל מה שהיה לאנשים כדי לתקשר עם מחשב, היה חלון הטרמינל (terminal) – מה שידוע גם כ”שורת הפקודה”  (command line). זה היה דומה לצ’אט עם המחשב – היו מקלידים לו, “שולחים”, והמחשב היה עונה. ההקלדה של המשתמש הייתה הקלט, המחשב היה חושב, עושה דברים (עיבוד), ומציג את התשובה שלו – פלט. מכאן, אנחנו מקבלים את אחת הצורות העיקריות לחשוב על “מהי תוכנה” – תוכנה, לפי צורת החשיבה הזו, מורכבת מ&lt;strong&gt;קלט, עיבוד, ופלט (לאו דווקא בסדר הזה, אגב, ולאו דווקא כל אלה)&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;אבל למה אני מדבר איתכן על המודל המיושן הזה של שימוש במחשבים? היום המודל הזה כבר לא קיים בכלל, ואנחנו הרי רוצים להגיע לתכנות של רובוט, שהוא בפירוש לא יהיה בצורה הזו, נכון? ובכן, כן ולא. כן – אנחנו אכן רוצים להגיע לתכנות של רובוט, והוא אכן לא יהיה בצורה הזו, אבל לא, המודל הזה עדיין קיים וחשוב. בפרט, &lt;strong&gt;הוא חשוב לנו כיוון שממנו נתחיל ללמוד תכנות, כי כך בדרך כלל הכי פשוט להתחיל&lt;/strong&gt;. הצעדים הראשונים שלנו יהיו ללמוד לבצע פלט, עיבוד וקלט, בצורה של שורת הפקודה.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;זה לא אומר שנעבוד, בעצמנו, בשורת הפקודה ואך ורק בשורת הפקודה&lt;/strong&gt; – לנו יש, כמו שציינתי בפוסט הקודם, כלים מתוחכמים יותר, והעיקרי שבהם הוא &lt;strong&gt;סביבת עבודה (IDE)&lt;/strong&gt; – תוכנה גרפית שמסייעת לנו לכתוב תוכנה, ולהבין ולפתור בעיות שעשויות לצוץ. אני אישית לצרכי עבודה עם Java משתמש בתוכנה IntelliJ IDEA של חברת JetBrains – זו סביבת עבודה שיש לה גם גרסה בתשלום וגם גרסה חינמית. פעם הייתי ממליץ גם לתלמידות שלי עליה, אבל מכיוון ש-WPI רוצה שנעבוד עם גרסה משלהם ל-Visual Studio Code בכלל, וזו הדרך העיקרית ליצור פרויקט קוד לרובוט ולהעלות אותו לרובוט, אני ממליץ להשתמש בה למי שלומדת Java לראשונה דרך FRC, והמדריכים שלי כותבים בהתאם. קבוצות שמכירות את Java היכרות מוקדמת עמוקה יותר ורגילות לעבוד ב-IDE אחר, יכולות להשתמש ב-Visual Studio Code ספציפית רק כדי ליצור פרויקט קוד לרובוט ולהעלות אותו לרובוט ולפתח את הקוד שאר הזמן ב-IDE האהוב עליהן.&lt;/p&gt;
+
+&lt;h1 id=&quot;שלום-עולם&quot;&gt;שלום עולם&lt;/h1&gt;
+
+&lt;p&gt;אם כן, שלושת הדברים הבסיסיים העיקריים שאנחנו רוצים לדעת לעשות ב-Java הם פלט, עיבוד וקלט. נתחיל בפלט. המסורת בעולם התכנות, היא שכאשר ניגשים ללמוד תכנות, למשל בשפת תכנות שאנחנו מתחילים ללמוד, הדבר הראשון שנרצה ללמוד לעשות הוא להציג כפלט את ההודעה “Hello, World!”.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;learning_java.hello_world&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HelloWorld&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;בפוסט הקודם הנחתתי את הקוד הזה עליכן והסברתי איפה לשים אותו ואיך להריץ אותו. אני מקווה שעשיתן זאת, ואני מזמין אתכן להשאיר את חלון ה-Visual Studio Code (או איזה IDE שאתן משתמשות בו) פתוח, כדי שתוכלו “לזפזפ” בין הקוד לבין הפוסט הזה מתי שתרצו, כדי להרגיש דברים בידיים, וכדי שתוכלו לנסות לשנות את הקוד, להריץ מחדש, ולראות מה קורה. ברצינות – לשחק עם דברים בקוד בידיים זה, בעיניי, &lt;strong&gt;חלק מאוד חשוב בללמוד לתכנת. תעשו את זה, כל הזמן, המון. אי אפשר ללמוד שחיה בהתכתבות.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;כאמור, כעת, הקוד שלנו, מבחינתנו, הוא שורה אחת בלבד:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;השורה הזו היא פקודה – היא דבר אחד שאנחנו אומרים לתוכנה לבצע. הפקודה הזו היא הדבר שמתבצע, כשאנחנו מריצים את הקוד שלנו. כאן, הפקודה היא מהצורה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/* something */&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;כאשר במקום &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/* something */&lt;/code&gt; יבוא מה שנרצה להדפיס, במקרה שלנו “Hello, world!”. המשמעות של System.out.println היא פקודה שאומרת “את זה, צריך להדפיס”.&lt;/p&gt;
+
+&lt;p&gt;רגע, “להדפיס”? ובכן, כן. ציינו קודם שאנחנו עובדים כרגע במודל שבו המחשב מדבר איתנו כמו בצ’אט, ושמה שהמחשב כותב לנו הוא הפלט שלנו. “הדפסה” כאן היא כתיבה לפלט. למה זה נקרא “הדפסה”? כנראה שהאסוציאציה מגיעה ממכונות כתיבה. אז הפקודה &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;System.out.println(/* something */);&lt;/code&gt; אומרת “להדפיס את מה שיש בסוגריים”.&lt;/p&gt;
+
+&lt;p&gt;ומה אנחנו מדפיסים? אנחנו מדפיסים את הטקסט “Hello, world!”. &lt;strong&gt;הטקסט נמצא במרכאות. המרכאות הן לא חלק מהטקסט, אלה מה שמסמן ל-Java איפה הטקסט מתחיל ונגמר. דבר כזה ב-Java נקרא String (מחרוזת).&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;אוקיי, זה לקח קצת זמן, אבל בתקווה, הבנו את תוכנית ה”שלום, עולם” שלנו. כעת, בואו נשנה אותה מעט. החליפו את הקוד של ה-main בקוד הבא:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;מה הולך כאן? קודם הייתה לנו פקודה אחת, ועכשיו יש לנו שתיים. נשים לב שהפקודות נגמרות בנקודה-פסיק - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;;&lt;/code&gt;. כך Java יודעת מהי פקודה, ובפרט, איפה היא נגמרת – פקודה תמיד נגמרת בנקודה-פסיק. Java מבצעת את הקוד פקודה אחרי פקודה, לפי הסדר שלהן, כמו שאדם שמרכיב רהיט יפעל לפי חוברת הוראות ממוספרות.&lt;/p&gt;
+
+&lt;p&gt;מהן שתי הפקודות שלנו? באחת אנחנו מבצעים System.out.print עם הטקסט “Hello, “, ובשניה, אנחנו מבצעים System.out.println עם הטקסט “world!”. התוצאה זהה למה שהיה לנו קודם – הטקסט “Hello, world!” מודפס למסך, אבל הפעם, זה מתבצע בשתי פקודות.&lt;/p&gt;
+
+&lt;p&gt;בנוסף, נשים לב שבאחת יש לנו print ובאחת println. מה ההבדל? println מבצעת הדפסה של הטקסט ואחריה ירידת שורה, בעוד print מדפיסה את הטקסט בלבד. נסו להחליף את ה-print ב-println ולהריץ את הקוד ולראות מה ההבדל שנגרם.&lt;/p&gt;
+
+&lt;p&gt;בנוסף, ניתן לכתוב פקודת println בלי כלום בסוגריים:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;זוהי פקודה חוקית ב-Java אשר מבצעת ירידת שורה וזהו. לעומת זאת, לא ניתן לכתוב פקודת print בלי כלום בסוגריים:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;לסיום, נסו להריץ את הקוד הבא, ולהבין למה הוא מדפיס מה שהוא מדפיס.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;notice&quot;&gt;
+&lt;h1 id=&quot;נקודות-עיקריות&quot;&gt;נקודות עיקריות&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;התחלנו ללמוד Java מלהגיד “שלום, עולם!” (כי… כי כך נהוג)&lt;/li&gt;
+  &lt;li&gt;Java מאפשרת לנו לספק פלט על ידי “הדפסה”&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;System.out.print&lt;/code&gt; ו-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;System.out.println&lt;/code&gt; משמשות להדפסה ב-Java&lt;/li&gt;
+  &lt;li&gt;ב-Java יש מחרוזות (String) - אלמנט בקוד שהמשמעות שלו הוא טקסט. אפשר לכתוב אחד על ידי שימוש במרכאות.&lt;/li&gt;
+  &lt;li&gt;לבינתיים, עלינו להתעלם ממה ש”מסביב” לצמד הסוגריים המסולסלים הפנימיים, ואנחנו מתרכזים ב-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; (התכנית הראשית), שנמצאת ביניהם.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;</content><author><name>יובל דולב</name></author><category term="צעדים ראשונים בג'אווה" /><category term="פלט" /><summary type="html">צעדים ראשונים ב-Java - איך לכתוב קוד שמדפיס קוד למסך, ומה זה אומר בכלל</summary></entry><entry><title type="html">התחלת העבודה עם Java</title><link href="http://localhost:4000/2023/09/29/java-structure/" rel="alternate" type="text/html" title="התחלת העבודה עם Java" /><published>2023-09-29T00:00:00+03:00</published><updated>2023-09-29T00:00:00+03:00</updated><id>http://localhost:4000/2023/09/29/java-structure</id><content type="html" xml:base="http://localhost:4000/2023/09/29/java-structure/">&lt;p&gt;בדרך כלל, הדבר הראשון שעושים כשלומדים שפת תכנות הוא ללמוד איך לכתוב תוכנית שכותבת למסך את המילים “Hello, world!” - הדבר כל כך נפוץ שיש לזה שם, זה נקרא &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;תוכנית &quot;שלום עולם&quot;&lt;/code&gt;. למה להתחיל מלכתוב למסך? כי לרוב זה הקל ביותר; למה “Hello, world!”? כנראה סיבות היסטוריות כלשהן. בכל מקרה, כך נראה קוד “שלום עולם” בפייתון (כן, פייתון - אנחנו עובדים בשפת Java אבל יש סיבה שאני מציג קודם את פייתון):&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;פשוט - פקודה אחת, שורה אחת. ב-Java הפקודה המתאימה תיראה כך:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, world&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;אוקיי, קצת יותר טקסט, אבל לא מאוד שונה. זו &lt;strong&gt;הפקודה&lt;/strong&gt; המתאימה לכך, וגם כאן, זו רק פקודה אחת, והיא תופסת רק שורה אחת. אבל ב-Java, אפילו בשביל התוכנית הפשוטה הזו, צריך שלד מסביבה. בשביל פייתון, קובץ שמכיל רק את השורה שכתבנו למעלה ידפיס את הפלט שאנחנו רוצים; אבל ב-Java, הפקודה שאנחנו צריכים להריץ צריכה להיות בתוך מסגרת מוזרה סביבה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;learning_java.hello_world&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FirstCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;בקוד הזה עדיין יש רק פקודה אחת שמדפיסה “Hello, world!” והיא תופסת רק שורה אחת, זו שבאמצע הקוד, אבל השלד מסביבה הכרחי. כדי להבין את הפקודה שבתכנית הראשית, אקדיש את הפוסט הבא. &lt;strong&gt;בפוסט הזה, אני רוצה להסביר, רק קצת, את מה שמסביב. רק ברמה שתספיק לכן להריץ קוד Java, לפתור שגיאות שקשורות בעניינים האלה, ובתקווה מעט להרגיע את הפחד שהדבר המוזר הזה מסביב אולי יוצר. &lt;u&gt;אפשר לדלג על הפוסט הזה&lt;/u&gt; ולחזור אליו אם נתקלים בבעיות בהרצה של קוד Java על המחשב שלכן&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;לפוסט הזה אני אניח שהתקנתן את Java על המחשב ואת Visual Studio Code WPI Edition. אני לא אפרסם כאן מדריך טכני של מה ואיך להתקין - באתר של WPI ניתן למצוא הוראות של מה צריך להתקין, ובנוסף של מה להתקין שם אני ממליץ להתקין את הJDK &lt;a href=&quot;https://www.oracle.com/il-en/java/technologies/downloads/&quot;&gt;מכאן&lt;/a&gt;. על Visual Studio Code עצמו אני ממליץ לוודא שמותקן &lt;a href=&quot;https://code.visualstudio.com/docs/java/extensions&quot;&gt;חבילת ההרחבות של Microsoft ל-Java&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;מתחילים&quot;&gt;מתחילים&lt;/h1&gt;
+
+&lt;p&gt;[עדכון, 2023.11.9 - קרתה תקלה ומה שהיה כתוב כאן נמחק - אני עובד על לתקן את זה, סליחה]&lt;/p&gt;
+
+&lt;h2 id=&quot;מעט-שינויים&quot;&gt;מעט שינויים&lt;/h2&gt;
+
+&lt;p&gt;מחקו את המילים &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;throws Exception&lt;/code&gt;. אני לא אסביר כרגע מה המילים האלה בכלל אומרות, כרגע כל מה שמעניין אותנו הוא לגביהן הוא שבדוגמה של Visual Studio Code לתוכנית “שלום, עולם” המילים האלה מופיעות, ושלמחוק אותן לא יעשה שום הבדל בשבילנו, ושהן לא מעניינות אותנו מעבר לזה.&lt;/p&gt;
+
+&lt;p&gt;כעת, שנו את המילה &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;App&lt;/code&gt; ל-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirstCode&lt;/code&gt;. יופיע קו אדום תחתיו שמייצג שגיאת קומפילציה. עברו על המילה &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirstCode&lt;/code&gt; עם העכבר, ולחצו על Quick Fix. לאחר מכן בחרו Rename File to FirstCode.java. הסתכלו וראו ששם הקובץ אכן שונה ל-FirstCode.java.&lt;/p&gt;
+
+&lt;p&gt;עכשיו, הוסיפו בתחילת הקוד את השורה:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;learning_java.hello_world&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;וגם הפעם יופיע קו אדום מתחת לשורה שהוספנו - עברו על השורה עם העכבר ולחצו על Quick Fix. ואז לחצו על &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;move FirstCode.java to package learning_java.hello_world&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;הסתכלו בצד וראו שנוצרו תיקיות חדשות: תיקיית &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;learning_java&lt;/code&gt; ובתוכה תיקיית &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_world&lt;/code&gt; - והקובץ עבר אליה.&lt;/p&gt;
+
+&lt;h2 id=&quot;מריצים&quot;&gt;מריצים&lt;/h2&gt;
+
+&lt;p&gt;אם הכל בסדר, מעל השורה &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public static void...&lt;/code&gt; אמורים להופיע שני כפתורים: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; ו-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Debug&lt;/code&gt;, מופרדים ב-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;. לחצו על &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000\assets\images\2023\09\rundebug&quot; alt=&quot;1697011153433&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;כעת, הסתכלו למטה. אתן אמורות לראות חלון טרמינל (תכף אסביר) שבו הורצה פקודה כלשהי שאין צורך להבין, ואחריה, הפלט &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello, World!&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000\assets\images\2023\09\codebeingran&quot; alt=&quot;1697011357760&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;מה-הולך-כאן&quot;&gt;מה הולך כאן?&lt;/h1&gt;
+
+&lt;h2 id=&quot;טרמינל&quot;&gt;טרמינל&lt;/h2&gt;
+
+&lt;p&gt;נתחיל בלהסביר את הדבר המוזר הזה כאן למטה. פעם, לפני שהיו במחשבים תוכנות גרפיות עם חלונות שאפשר להזיז ועכבר ששולט בהן, מסך המחשב היה טרמינל - שורת פקודה: היית כותב למחשב פקודה, הוא היה מבצע אותה ומציג פלט, וחוזר חלילה. מעין צ’אט עם המחשב. וזה עדיין קיים גם במחשב שלכן. זה מה ש-Visual Studio Code עשה כשלחצתן על Run: פתח שורת פקודה, כתב פקודה עבורה, שלח אותה, והמחשב ביצע אותה. Visual Studio Code מציג לנו את הפקודה שהוא ביצע, וזה הטקסט הכחול המוזר הזה שמתחיל ב-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; וכל כך ארוך שהוא לוקח יותר משורה אחת, אבל כל הטקסט הזה לא משנה, כי Visual Studio Code עושה את זה בשבילנו. זה אחד מהיתרונות הרבים של עורכי קוד מודרניים - להיות מתכנתת או מתכנת היום זה יותר קל ממה שזה היה פעם. אבל מה עושה התוכנה?&lt;/p&gt;
+
+&lt;h2 id=&quot;קומפילציה-והרצה&quot;&gt;קומפילציה והרצה&lt;/h2&gt;
+
+&lt;p&gt;מה שהמחשב שלנו עשה מורכב משני חלקים: ראשית, הקומפיילר של Java לקח את קוד ה-Java שלנו, וקימפל אותו - הפך אותו לקבצים בינאריים שאותם Java יכולה להריץ. לאחר מכן, Java לקחה את הקבצים הבינאריים האלה, והריצה אותם. נכנסתי לפרטים &lt;a href=&quot;http://localhost:4000/2024/03/28/what-is-java/&quot;&gt;בפוסט העשרה קודם&lt;/a&gt;, אז לא אעשה זאת שוב כאן. אם תבדקו את תיקיית bin אצלכן בפרויקט, תמצאו שיש שם תיקיה בשם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;learning_java&lt;/code&gt; ובתוכה תיקיה בשם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_world&lt;/code&gt;; ובתוכה קובץ בשם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirstCode.class&lt;/code&gt;. קבצי &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.class&lt;/code&gt; הם הקבצים הבינאריים של Java. הם לא יהיו קריאים מאוד לבני אדם, והם לא צריכים להיות - תוכנה קוראת אותם ומבצעת אותם.&lt;/p&gt;
+
+&lt;h2 id=&quot;חבילות-ושמותיהן&quot;&gt;חבילות ושמותיהן&lt;/h2&gt;
+
+&lt;p&gt;קוד ב-Java מאורגן בחבילות. חבילות הן תיקיות שבהן קבצי קוד ה-Java שלנו נמצאים, וכיוון שמדובר בתיקיות, הן יכולות להיות מאורגנות במבנה היררכי: אחת בתוך השניה. תיקיית הקוד שלנו היא &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt;, וזו הנקודה בה “מתחיל” מבנה החבילות שלנו. תיקיה כזו נקראת באנגלית גם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sources root&lt;/code&gt; (“שורש קבצי המקור”) - המילה &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sources&lt;/code&gt; מתייחסת לקבצי מקור, שזה שם מהולל לקבצי הקוד שאנחנו כותבות, ו-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt; הוא מילה ממדעי המחשב שמשמעותה “מבנה היררכי מתחיל כאן”.&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;אנשי מדעי המחשב קוראים למבנים היררכיים כאלה בשם “עצים”, למרות שהם מציירים אותם כמו עצים &lt;strong&gt;הפוכים&lt;/strong&gt; שצומחים מלמעלה למטה (יש מי שאומרים שזה בגלל שהם לא ראו עץ אמיתי מעולם שכן הם לא יוצאים מהבית). לאחר מכן אנשי מדעי המחשב מתחילים להוסיף גם מונחים כמו “צמתים”, ולפעמים גם דברים בשם “קשתות”, ולפעמים לקשתות יש “משקל”… לאנשי מדעי המחשב יש שמות מוזרים לדברים לפעמים.&lt;/p&gt;
+
+&lt;p&gt;את הקוד שלנו שמנו בחבילה בשם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;learning_java.hello_world&lt;/code&gt;, שזו בעצם תיקיה בשם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_world&lt;/code&gt; בתוך תיקיה בשם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;learning_java&lt;/code&gt; שיושבת בתוך תיקיית &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; שלנו. זו דוגמה למבנה ההיררכי שהזכרתי. שימו לב שהתיקיות מופרדות בנקודה.&lt;/p&gt;
+
+&lt;p&gt;קובץ Java צריך להתחיל בפקודת &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package&lt;/code&gt; שאומרת באיזו חבילה הוא נמצא. הפקודה צריכה להכיל את החבילה &lt;strong&gt;הנכונה,&lt;/strong&gt; בהתאם למיקום של הקובץ. אם הם לא מתאימים, זוהי &lt;strong&gt;שגיאת קומפילציה:&lt;/strong&gt; הקוד, מבחינת Java, אינו הגיוני. זה מה שקרה קודם, כאשר כתבנו את פקודת ה-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package&lt;/code&gt; בקובץ שלנו, ובהתאם לכך, Visual Studio Code זיהה את השגיאה והציע לנו שתי דרכים לתקן אותה: להזיז את הקובץ לתיקיה המתאימה (באופציה הזו בחרנו), או לשנות את פקודת ה-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;בנוסף, פקודת &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package&lt;/code&gt; צריכה להסתיים בנקודה-פסיק (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;;&lt;/code&gt;). למעשה, כל פקודה ב-Java צריכה להסתיים בנקודה-פסיק.&lt;/p&gt;
+
+&lt;p&gt;יש כללים ב-Windows ובמערכות הפעלה אחרות לשמות של תיקיות; לא הכל יכול להיות שם של תיקיה, למשל אסורים סימני פיסוק מסוימים (לא כולם); ב-Windows יש גם שמות מסוימים שאסורים מסיבות אחרות - אי אפשר לקרוא לתיקיה con (כן, ברצינות, תנסו - זה לא רלוונטי לנו כאן, אבל מי שמתעניינת למה, לגמרי כהעשרה, יכולה לצפות בסרטון הזה &lt;a href=&quot;https://www.youtube.com/watch?v=bC6tngl0PTI&amp;amp;pp=ygUOdG9tIHNjb3R0IGNvbiA%3D&quot;&gt;כאן&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;אז אם משהו לא יכול להיות שם של תיקיה במערכת ההפעלה שלנו, הוא לא יכול להיות שם של חבילה אצלנו, &lt;strong&gt;אבל ב-Java יש כללים מגבילים יותר&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;ב-Java, יש מה שנקרא identifiers - אפשר לתרגם את זה כ”מזהה”, אבל אני מעדיף לתרגם את זה כ”שם”. המילה הזו מתייחסת לשם באופן כללי ב-Java, כולל שמות של חבילות, וגם של אלמנטים אחרים בשפה - בגדול, כל דבר שהמתכנתת נותנת לה שם. אנחנו עוד לא מכירים את האלמנטים, אבל הנה רשימת הכללים:&lt;/p&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+&lt;h3 id=&quot;כללים-מחייבים-לכל-השמות-identifiers-ב-java&quot;&gt;&lt;strong&gt;כללים &lt;u&gt;מחייבים&lt;/u&gt; ל&lt;u&gt;כל&lt;/u&gt; השמות (identifiers) ב-Java&lt;/strong&gt;:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;מותרות רק: אותיות (קטנות וגדולות), קו תחתון (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_&lt;/code&gt;), סימן הדולר (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;) וספרות
+    &lt;ul&gt;
+      &lt;li&gt;שימו לב שזה אומר &lt;strong&gt;שאסורים רווחים&lt;/strong&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; &lt;/code&gt;)&lt;/li&gt;
+      &lt;li&gt;בתאוריה מותרות גם אותיות שלא באנגלית כמו למשל יוונית או עברית אבל יש להמנע מזה&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;אסור להתחיל שם בספרה&lt;/li&gt;
+  &lt;li&gt;ישנה רשימת &lt;strong&gt;מילים שמורות&lt;/strong&gt; (reserved keywords) שיש להן משמעות מיוחדת ב-Java ואי אפשר להשתמש בהן כשמות ב-Java. המילה &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package&lt;/code&gt; היא אחת מהן, כמו כן מילים נוספות שראינו בפוסט הזה: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;static&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;void&lt;/code&gt;. הרשימה המלאה (והלא מאוד ארוכה) &lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html&quot;&gt;כאן, באתר הרשמי של Java&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;נסו לכתוב לעצמכן כמה דוגמאות לשמות שהם חוקיים וכמה לשמות שאינם חוקיים.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;p&gt;הכללים האלה &lt;strong&gt;מחייבים&lt;/strong&gt; במובן של הקומפיילר מחייב אותן - קוד ב-Java שלא עומד בכללים האלה אינו הגיוני מבחינת הקומפיילר ו-Java אינה יכולה לקמפל אותו, כלומר להפוך אותו לקוד בר-הרצה.&lt;/p&gt;
+
+&lt;p&gt;בנוסף, &lt;strong&gt;מקובל&lt;/strong&gt; שכל האותיות בשמות של חבילות הן אותיות קטנות, אבל זה לא משהו שהקומפיילר של Java מחייב אותנו; זה כלל שמקובל על רוב מתכנתי Java, או, מה שנקרא, &lt;strong&gt;קונבנציה, או בעברית, מוסכמה.&lt;/strong&gt; אני מרכז רשימה של כמה מוסכמות חשובות &lt;a href=&quot;http://localhost:4000/conventions/&quot;&gt;כאן&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;לגבי מה עושים עם שם החבילה שלנו צריך לכלול יותר ממילה אחת, אין הסכמה אוניברסלית - יש מי שחושבים שלא צריך להפריד בין המילים, ויש מי שחושבים שצריך להפריד בין המילים עם קו תחתון. כמו שאולי שמתן לב, אני הולך על השניה מביניהן: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;learning_java.hello_world&lt;/code&gt;. סגנון זה נקרא lower_snake_case (המילה case מתייחסת לסוג אות באנגלית - קטנות או גדולות, המילה lower מתייחסת לאותיות קטנות, ואני מניח שאפשר לראות למה snake).&lt;/p&gt;
+
+&lt;p&gt;מילה אחרונה לגבי חבילות: ניתן למקם קבצי Java ישר בתיקייה הראשית של קבצי ה-Java (מה שקראתי לו קודם “sources root”). זה נקרא &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default package&lt;/code&gt; (חבילת ברירת המחדל) ובמקרה זה לא יהיה בקובץ פקודת &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package&lt;/code&gt;. &lt;strong&gt;מומלץ מאוד להמנע מלהשתמש באופציה הזו למרות שהיא טכנית מותרת. היא עושה בעיות. פשוט נשתמש בחבילות.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;מחלקות-פונקציות-ושמותיהן&quot;&gt;מחלקות, פונקציות ושמותיהן&lt;/h2&gt;
+
+&lt;p&gt;קובץ ב-Java, מכיל, באופן כללי, מחלקה אחת בלבד. מהי מחלקה? זה לא מאוד משנה עכשיו: מה שמשנה הוא שהיא מתחילה במילים &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public class&lt;/code&gt; ואחריה שם המחלקה, ולאחר מכן פותחים סוגריים מסולסלים. כל מה שנמצא בתוך הסוגריים המסולסלים הוא חלק מהמחלקה. ב-Java, השאלה איפה דברים מתחילים ואיפה הם נגמרים נענית על ידי סוגריים מסולסלים.&lt;/p&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+    &lt;details open=&quot;&quot;&gt;
+        &lt;summary&gt;
+            &lt;u class=&quot;java-python-header&quot;&gt;Java לדוברות פייתון&lt;/u&gt;
+            &lt;p class=&quot;java-python-description&quot;&gt;
+                חלק מהתלמידות שלי מגיעות עם רקע של פייתון. מדי פעם אני משווה בין Java לפייתון כדי לעזור להן להבין את
+                Java. 
+                חלונית זו רלוונטית רק למי שמגיעה מרקע של פייתון וניתן לפתוח ולסגור אותה בעזרת המשולש בצד.
+            &lt;/p&gt;
+            &lt;hr /&gt;
+        &lt;/summary&gt;
+        
+&lt;p&gt;בפייתון התשובה היא “מתחיל בנקודותיים ונמשך לפי ריווח”, כלומר זה אחד ההבדלים בין Java לפייתון. למשל, מי שמכירה if בפייתון, הסתכלי בקוד הבא:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hey. &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temperature&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;It sure is hot today!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;How are you?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;פייתון יודעת מה בתוך התנאי לפי הריווח. הקוד המתאים ב-Java הוא:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hey.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temperature&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;It sure is hot today!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;How are you?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;שפת Java יודעת מה בתוך התנאי לפי הסוגריים המסולסלים. גם כאן שמנו ריווח, כי כך &lt;strong&gt;נהוג&lt;/strong&gt; ב-Java וזה יותר נוח בעיניים וברור לקריאה, אבל ב-Java, הריווח הוא בשבילנו - הקומפיילר לא מתייחס אליו, ומבחינת Java, היינו גם יכולים לשים את כל הקוד בשורה אחת (Java מפרידה פקודות על ידי נקודה-פסיק, לא על ידי ירידת שורה, כך שגם ירידות שורה הן רק בשבילנו).&lt;/p&gt;
+
+
+    &lt;/details&gt;
+&lt;/div&gt;
+
+&lt;p&gt;שם המחלקה צריך לעמוד בכללים שנכתבו למעלה, ובנוסף, שם קובץ ה-Java שבו הוא נמצא צריך להתאים. כך למשל הקוד שלנו נמצא בקובץ בשם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirstCode.java&lt;/code&gt; ויש בו מחלקה בשם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Firstcode&lt;/code&gt;. בנוסף, גם לגבי שם מחלקה יש מוסכמות: המוסכמה היא ששם של מחלקה צריך להתחיל באות גדולה, ואם יש יותר ממילה אחת, אז גם כל מילה נוספת צריכה להתחיל באות גדולה. זה נקרא PascalCase או UpperCamelCase.&lt;/p&gt;
+
+&lt;p&gt;כרגע מה שיש במחלקה שלנו הוא פונקציה בשם &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt;. זהו הדבר שאותו אנחנו “פותחים” בשורה &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public static void...&lt;/code&gt;, ותוכן הפונקציה הוא מה שנמצא בתוך הסוגריים המסולסלים שמתחילים בשורה הזו. מה זו פונקציה? כרגע גם זה לא חשוב מאוד; לבינתיים, השאלה מהן פונקציות לא מעניינת אותנו בכלל, ומי שצריכה תשובה כלשהי, אז לבינתיים, פונקציה היא רצף של פקודות שעוטפים אותו עם שם.&lt;/p&gt;
+
+&lt;p&gt;אצלנו בקוד בינתיים זו תהיה הפונקציה היחידה, כלומר, כפי שאמרתי בהתחלה, נכתוב רק בתוך הסוגריים המסולסלים של ה-main, עד שנגיע לחלק בו אנחנו לומדים מהן פונקציות. עכשיו אפשר לקצר ולהגיד למה היינו צריכים את הכל, שורת מחץ אחת:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;קוד ב-Java מתחיל לרוץ מתוך פונקציית ה-main, שצריכה להיות בתוך מחלקה, שצריכה להיות בתוך קובץ עם שם מתאים, ולהימצא בחבילה כלשהי.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;צפירת-הרגעה&quot;&gt;צפירת הרגעה&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;לא קריטי להבין הכל בפוסט הזה בפעם הראשונה.&lt;/strong&gt; עכשיו באמת נתחיל ללמוד Java. מה שעשינו כאן נועד בעיקר לשתי מטרות:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;להסביר למה יש כל מיני דברים מוזרים מסביב לתכנית הראשית שלנו&lt;/li&gt;
+  &lt;li&gt;לעזור לפתור בעיות שעשויות לצוץ עם הדברים האלה&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;notice&quot;&gt;
+&lt;h1 id=&quot;נקודות-עיקריות&quot;&gt;נקודות עיקריות&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;קוד Java מורכב מקבצי &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.java&lt;/code&gt; שנמצאים בחבילות&lt;/li&gt;
+  &lt;li&gt;כל קובץ Java מכיל (בכללי) מחלקה אחת, ששמה מתאים לשם הקובץ&lt;/li&gt;
+  &lt;li&gt;כל קובץ Java מתחיל בפקודת &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package&lt;/code&gt; המתאימה לחבילה בה הוא נמצא&lt;/li&gt;
+  &lt;li&gt;קבצי Java יכולים, בין השאר, להכיל פונקציות סטטיות&lt;/li&gt;
+  &lt;li&gt;להבין מחלקות ופונקציות סטטיות יבוא בהמשך - בינתיים רק צריך לדעת שהם דברים שקיימים&lt;/li&gt;
+  &lt;li&gt;לבינתיים תהיה לנו רק מחלקה אחת ופונקציה סטטית אחת, בשם main. הפונקציה הזו נקראת הפונקציה הראשית.&lt;/li&gt;
+  &lt;li&gt;לחבילות, מחלקות ופונקציות יש כללי שמות: חלקם מחייבים וחלקם הם בגדר דברים מקובלים&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;כל הידע בפוסט הזה נועד רק כדי לאפשר הבנה של איך לדאוג שדברים יעבדו על המחשב שלכן, אבל ברגע שדברים עובדים, יספיק לנו לבינתיים להתעסק &lt;u&gt;*רק במה שבתוך פונקציית ה-main, ולשכוח מהשאר*&lt;/u&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;</content><author><name>יובל דולב</name></author><category term="Java בסיסית" /><category term="טכני" /><category term="חבילות" /><category term="מחלקות" /><category term="פונקציות" /><category term="קבצים" /><category term="חוקי שמות" /><summary type="html">מבנה התוכניות הראשונות שלנו ב-Java</summary></entry><entry><title type="html">מהי Java</title><link href="http://localhost:4000/2023/09/28/what-is-java/" rel="alternate" type="text/html" title="מהי Java" /><published>2023-09-28T00:00:00+03:00</published><updated>2023-09-28T00:00:00+03:00</updated><id>http://localhost:4000/2023/09/28/what-is-java</id><content type="html" xml:base="http://localhost:4000/2023/09/28/what-is-java/">&lt;div class=&quot;notice--info&quot;&gt;
+
+    &lt;h1&gt;שימו לב - העשרה&lt;/h1&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;
+        פוסט זה הוא העשרה בנושא שאני מקווה שהוא מעניין ומוסיף
+        עניין, אבל החומר בו הוא כנראה לא קריטי לתכנות
+        שאנחנו עוסקים בו, ולא כזה שלא ניתן להבין את שאר החומר בלעדיו.
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;למה-צריך-את-java&quot;&gt;למה צריך את Java&lt;/h1&gt;
+
+&lt;p&gt;אנחנו רוצים לכתוב תוכנות - דברים שהמחשב יכול להריץ. המחשב, כידוע לנו, מדבר רק בינארית - שפה שמורכבת רק מאפסים ואחדים - ואף על פי שאפשר, בתאוריה, לכתוב לו תוכנות ישירות בשפה שהוא מדבר, בני אדם חושבים יותר טוב בשפה אנושית ובקונספטים מורכבים יותר מאפסים ואחדים. בשפות בני אדם יש מילים ומשפטים ומונחים ושמות עצם ומילות פועל. על כן, גם בתקופות מוקדמות יחסית של עידן המחשבים החשמליים, העדיפו לחשוב על התוכנות שהם רוצים לממש בצורה &lt;strong&gt;מילולית&lt;/strong&gt; בשפה שלהם ורק לאחר מכן היו עושים את העבודה הידנית של המרתו למשהו שמחשב יכול לקרוא. עם הזמן, צץ הרעיון ל&lt;strong&gt;קומפיילר&lt;/strong&gt; - מהדר, בעברית צחה - תוכנת מחשב אשר ייעודה היא להפוך את תיאורים מילוליים של התוכנה שלנו לקוד מכונה. אחרי הכל, מחשבים נועדו להקל על דברים שבני אדם היו עושים ידנית, ואם זו מטלה ידנית שאנשים עושים, אז הגיוני שננסה לגרום למחשבים לעזור לנו גם במטלה הזו. זה נראה הגיוני בדיעבד, אבל היו גם מי שהאמינו בזמנו שזה רעיון מגוחך. בפוסט הזה אני רוצה לתאר מהי Java, על ידי כך שנסתכל על כמה תכונות שלה.&lt;/p&gt;
+
+&lt;h2 id=&quot;java-היא-שפה-עילית-high-level-במידה-מסוימת&quot;&gt;Java היא שפה עילית (high-level), במידה מסוימת&lt;/h2&gt;
+
+&lt;p&gt;בכל מקרה, תוכנית מחשב שיכולה לקחת &lt;strong&gt;כל&lt;/strong&gt; תיאור מילולי של תוכנת מחשב ולהפוך אותו לקוד מכונה היא עדיין דבר בדיוני למדי (למרות שבשנת 2023 ראינו קפיצה אדירה בתחום הבינה המלאכותית והופיע ChatGPT - התקרבנו לשם, אבל אנחנו עוד לא שם). שפת התכנות הראשונה (כנראה?) הייתה &lt;strong&gt;אסמבלי&lt;/strong&gt;, או בעברית - שפת סף. אסמבלי היא שפה שבה כל שורת קוד מייצגת פקודת מכונה - קוד עם \(n\) שורות אסמבלי יהפוך לקוד מכונה עם \(n\) פקודות. זה מה שהופך את אסמבלי לשפת סף, ובכך היא בתחתיתו של אחת הסקאלות שעליהן ממוקמות שפות התכנות - סקאלת &lt;strong&gt;low-level-high-level&lt;/strong&gt;. שפות שהן low-level הן יותר קרובות למה שהמחשב עושה בפועל, מכילות פחות אבסטרקציה, וככל שהן יותר low-level המתכנת נדרש יותר לחשוב על איך המחשב פועל (לכן, הן גם נקראות “קרובות למתכת”). לעומתן, שפות שהן יותר high-level (שפות עיליות) מאפשרות למתכנת לחשוב בקונספטים אבסטרקטיים יותר, ויותר קרובים לצורת מחשבה אנושית במקום מחשבית, ולכתוב קוד שהוא, בתקווה, יותר קריא מאשר שפות low-level, ויותר קל לכתיבה.&lt;/p&gt;
+
+&lt;p&gt;אז איפה שפת Java על הסקאלה הזו? ובכן, ראשית צריך להבין שהסקאלה היא לא אבסולוטית - אין מספר או שבו ניתן להשוות האם שפה היא עילית יותר ובכמה, ואין לזה יחידת מידה. אין (ככל הידוע לי לפחות) מכשיר מדידה או נוסחה שתסווג את Java כשפה עם של “7.23 הופר” ואת אסמבלי כשפה של “0.1 הופר”. מתכנת פייתון יאמר לנו ש-Java היא שפה low-level יחסית, ומתכנתת C++ תאמר לנו ש-Java היא שפה high-level יחסית. כנראה שהרוב יסכימו על השוואות &lt;strong&gt;מסוימות&lt;/strong&gt;: למשל, אין ממש מקום לטעון שיש שפה שהיא יותר תחתית מאשר אסמבלי (חוץ משפת מכונה או בינארי), ואין ממש מקום לטעון ששפת C היא יותר עילית מאשר Java. על כן, אנחנו יכולים להגיד על Java שהיא עילית &lt;em&gt;יחסית&lt;/em&gt;. הכל יחסי כאן.&lt;/p&gt;
+
+&lt;p&gt;לאחר שדיברתי קצת על כך ש-Java היא שפה high-level יחסית, יש עוד שלוש תכונות של Java שאני רוצה לדבר עליהן: Java היא שפה מקומפלת, היא שפה אוניברסלית, והיא שפה מונחת עצמים.&lt;/p&gt;
+
+&lt;h2 id=&quot;java-היא-שפה-מקומפלת&quot;&gt;Java היא שפה מקומפלת&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/2024/03/mekumpelet.png&quot; alt=&quot;סליחה, לא יכולתי להתאפק&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(סליחה, לא יכולתי להתאפק)&lt;/p&gt;
+
+&lt;p&gt;Java היא שפה מקומפלת. הזכרתי קודם שקומפיילר (מהדר) הוא תוכנה שלוקחת קוד בשפת תכנות וממירה אותו לשפת מכונה. ובכן, אם שפות עוברות קומפילציה (הידור), אז האם לא כל שפת תכנות היא מקומפלת? ובכן, לא בדיוק. קומפיילר קורא את &lt;strong&gt;כל&lt;/strong&gt; התוכנית ופולט קוד מכונה. יש עוד קטגוריה של שפות - שפות אינטרפר (מפרש). אינטרפטר הוא דומה לקומפיילר - הוא מקבל קוד בשפת תוכנית ומאפשר להריץ אותו - אבל אינטרפרטר קורא את הקוד ומבצע אותו מיד, שורה אחרי שורה. מפרש קורא שורה - מבין אותה - מבצע אותה, ורק אז ממשיך לשורה הבא. אני מפשט קצת (ובכלל, לפשט דברים זה חלק גדול בתכנות), אבל זה בערך ההבדל, או לכל הפחות, התיאור הזה טוב מספיק בשביל ההקשר הנוכחי. בתאוריה, אינטרפטרים (לפחות מסוימים) יכולים לקבל קוד שמתחיל בשורות קוד הגיוניות ותקינות, ואחריהן ג’יבריש מוחלט (מהסוג שנוצר כאשר החתול מחליט לפסוע על המקלדת שלנו כאילו מדובר ברצפז’/1גקסעהטאה4לםפצלוו]ץ5985) - והוא יבצע את השורות ההגיוניות, ורק לאחר מכן יגיד, “רגע, משהו פה לא בסדר” ויפסיק ויצעק עלינו.&lt;/p&gt;
+
+&lt;p&gt;אם כן, Java שייכת לקטגוריית השפות המקומפלות. הקומפיילר של Java מקבל קוד Java ופולט קוד מכונה (מכונה גם בינארי). הקוד שלנו חייב להיות תקין בשלמותו כדי שנוכל לקבל את קוד המכונה ולאחר מכן להריץ אותו - ו”תקין בשלמותו” עשוי לכלול יותר מקובץ אחד. הקוד שלנו ב-Java יכול להתפרש על יותר מאשר קובץ אחד, וקובץ ב-Java יכול להשתמש בדברים שנמצאים בקובץ אחר (זו די כל הפואנטה), וכל קובץ חייב להיות תקין, אפילו אם לא משתמשים בו. “תקין” כלומר צריך לעמוד בכללים שהופכים את הקובץ למשהו שהוא קריא מבחינת הקומפיילר של Java - למשל, בכל פעם שפותחים סוגריים, הם צריכים להיסגר מתישהו. זה לא אומר שכל הדברים בקוד צריכים לבצע באופן נכון את המטרה שלהם - לקומפיילר אין דרך לדעת האם הקוד שלנו נכון ביחס למה שהוא אמור לעשות, אבל הוא כן יכול להגיד שהקוד לא מתאר עבורו הוראות הגיוניות שהוא יכול להבין. אז זהו קומפיילר - הוא לוקח את כל הקוד שלנו, שעשוי להיות בהרבה קבצים ובהרבה תיקיות, ויוצר ממנו קובץ אחר, בינארי, שאותו אפשר להריץ.&lt;/p&gt;
+
+&lt;h2 id=&quot;java-היא-אוניברסלית-וגם-שיקרתי-קצת-קודם&quot;&gt;Java היא אוניברסלית (וגם, שיקרתי קצת קודם)&lt;/h2&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;כל הפוסט הזה לא חשוב מאוד, אבל החלק הזה הוא כנראה החלק שהכי פחות חשוב&lt;/p&gt;
+
+&lt;p&gt;אוקיי, קצת שיקרתי כשאמרתי שהמהדר של Java פולט קוד מכונה, או לפחות, בערך שיקרתי. כדי להבין את זה, בואו נחזור רגע לשפת אסמבלי - גם כאן קצת שיקרתי, כשהצגתי את שפת אסמבלי כשפה אחת. למעשה, יש מחשבים שונים בעולם ויש להם מעבדים שונים (מעבד הוא המרכז של המחשב - הוא מה שמבצע את פקודות המכונה). מעבדים שונים נבדלים לא רק במהירות שלהם אלא גם במספר הרגיסטרים שלהם, במספר הסיביות שלהם, בפקודות שהם תומכים בהם ועוד מונחים &lt;strong&gt;שלא חשוב לנו להבין בכלל&lt;/strong&gt; (זכרו, אנחנו &lt;strong&gt;לא&lt;/strong&gt; מתכנתים בשפות “קרובות למתכת”!). פקודות המכונה תואמות למעבד ולמה שהוא יכול לעשות, ולכן, לכל ארכיטקטורה שונה (ארכיטקטורה, זה המונח - שגם הוא לא חשוב לנו) יש שפת אסמבלי משל עצמו (למרות שרוב שפות האסמבלי דומות בהרבה דברים). קוד אסמבלי עבור ארכיקטורה ספציפית יוצר קוד מכונה שניתן להריץ על הארכיטקטורה הספציפית הזו.&lt;/p&gt;
+
+&lt;p&gt;וזו קצת בעיה, כי אם נרצה קוד למחשבים שונים, נרצה לכתוב תוכנה חדשה. זה אומר שאם אנחנו כותבים קוד עבור עצמנו, לא נוכל לשדרג את המחשבים שבהם אנחנו משתמשים בלי לשכתב את התוכנה, ואם נרצה לכתוב קוד עבור לקוחות אז נצטרך קוד שונה לכל לקוח. על כן, הומצא הקונספט של שפה אוניברסלית - שפה אחת לכל ארכיטקטורה שנרצה להשתמש בה. איך נריץ על ארכיטקטורות שונות? פשוט - יהיו לנו מהדרים שונים לכל ארכיטקטורה. את הקוד נכתוב בשפה אוניברסלית, ואז, לכל ארכיטקטורה שנרצה להריץ את התוכנה שלנו עליה, יהיה לנו מהדר, ונזין לתוכו את הקוד בשפה האוניברסלית שלנו, ונקבל קוד מכונה המתאים למכונה הזו. שפת התכנות הראשונה שעשתה זאת הייתה COBOL - Common Business Oriented Language.&lt;/p&gt;
+
+&lt;p&gt;אבל, גם זה לא תיאור מדויק של Java. הרעיון שעליו בנוי Java לוקח את הקונספט הזה ולוקח אותו שלב אחד הלאה. הבעיה בקונספט הקודם היא שעדיין צריך לייצר קוד לכל ארכיטקטורה - אז אם נרצה קוד לארכיטקטורה ספציפית, נצטרך להדר בעצמנו על מהדר לארכיקטורה זו, או לתת ללקוח את הקוד ולבקש ממנו שהוא יהדר אותו עבור המכונה שלו (ומניין לנו שבכלל יש לו מהדר מתאים?).&lt;/p&gt;
+
+&lt;p&gt;היה יכול להיות נחמד אם הייתה ארכיטקטורה אחת, שיש לכולם, אבל זה לא הולך לקרות. אז הרעיון של Java הוא שלכולם כן תהיה ארכיטקטורה אחת - סוג אחד של מכונה - אבל המכונה הזו, תהיה &lt;strong&gt;מכונה וירטואלית&lt;/strong&gt;. המכונה הוירטואלית היא תוכנית שמותקנת על מחשב, ו”מעמידה פנים” שהיא מחשב בפני עצמו. הרעיון הזה לא ייחודי לJava - הוא קיים מקטן ועד גדול. בין השאר, על מחשב בינוני היום אפשר להתקין מכונה וירטואלית שתריץ מערכת הפעלה שנועדה למחשב עצמאי בפני עצמה. אני למשל, את שורות אלה, כותב במחשב ה-Windows שלי, ועליו יש לי מכונה וירטואלית ב-Virtualbox שמריצה מערכת הפעלה ממשפחת Linux - זה שימושי לדברים מסוימים, כמו למשל אם אני רוצה להשתמש בתוכנות שנכתבו עבור מחשבי Linux, או סתם תוכנות שאני לא סומך עליהן לחלוטין ומעדיף להריץ אותן על מחשב שאם הן מכילות קוד זדוני, לא יהיה הרבה נזק שהן יוכלו בגלל לגרום אפילו אם ינסו.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/2024/03/vm.jpg&quot; alt=&quot;מכונה וירטואלית - עולמות בתוך עולמות&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice--danger&quot;&gt;יש הבדל בין מכונה וירטואלית ב-Virtualbox כמו זו שאני מראה כאן בתמונה לבין המכונה הוירטואלית של Java. על המכונה הוירטואלית שאני מראה כאן אני יכול להריץ תוכנות שאני לא סומך עליהן, כי גם במקרה הגרוע ביותר, תוכנה זדונית תמחק רק את הדיסק המדומה שעליו מערכת ההפעלה הוירטואלית. לעומת זאת, למכונה הוירטואלית של Java יש גישה לקבצים על המחשב שלכן ולפעולות נוספות, כלומר, היא אולי וירטואלית, אבל היא לא מבודדת באותה מידה. &lt;strong&gt;תוכנה חשודה מריצים רק על מכונה שהיא מספיק מבודדת (בין אם מכונה וירטואלית כמו ב-Virtualbox ודומיה או מחשב פיזי שמנותק מהרשת ושלא אכפת לנו אם דברים בו ישתבשו). לצורך זה ספציפית, המכונה הוירטואלית של Java היא וירטואלית אבל לא מבודדת.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;מערכת ההפעלה שרצה על המכונה הוירטואלית אינה יודעת, שהמעבד שעליה היא פועלת אינו מעבד פיזי שנוצר על ידי חברת אלקטרוניקה, אלא על תוכנה שמעמידה פנים שהיא מעבד. וגם אם היא “יודעת” את זה, זה לא גורם להבדל גדול עבורה. מערכת ההפעלה היא תוכנה, יש לה הוראות כתובות לבצע וזה מה שהיא עושה.&lt;/p&gt;
+
+&lt;p&gt;אז לJava יש מכונה וירטואלית - המכונה הוירטואלית של Java - הJVM. המהדר של Java מקבל קוד בשפת Java, ופולט קוד מכונה &lt;strong&gt;עבור המכונה הוירטואלית של Java,&lt;/strong&gt; ולא עבור המחשב שלנו. הקוד הזה נקרא byte-code. כשאנחנו מריצים תוכנית Java מקומפלת, אנחנו מריצים אותה על המכונה הוירטואלית של Java, שהיא בעצמה תוכנה שרצה על המחשב שלנו, שכתובה בשפת מכונה עבור המחשב הספציפי שלנו.&lt;/p&gt;
+
+&lt;p&gt;על כן, ה-JVM, המכונה הוירטואלית של Java, היא תוכנית בפני עצמה. המפתחים שיוצרים את שפת Java, בחברת Oracle (במקור השפה הייתה של חברת Sun) כתבו את התוכנה הזו, והידרו אותה עבור הארכיטקטורה של המחשב שלנו, ולכל ארכיטקטורה שהם רק יכלו, כדי שכל אחד יוכל להוריד מהאתר שלהם את המכונה הוירטואלית של Java ולהתקין אותה על המחשב שלו. גם המהדר של Java הוא תוכנה בפני עצמו, כזו שמטרתה לקבל קוד Java ולהוציא byte-code.&lt;/p&gt;
+
+&lt;p&gt;בצורה זו ניתן לכתוב קוד עבור מחשבים רבים, &lt;strong&gt;להדר אותו אצלנו, על המהדר של Java,&lt;/strong&gt; ולספק את ה-byte-code לכל מחשב שמותקנת עליו ה-JVM, בלי קשר לארכיטקטורת המחשב, שלא מעניינת אותנו. בימינו, אפילו המהדר של Java נכתב בשפת Java.&lt;/p&gt;
+
+&lt;h2 id=&quot;java-היא-שפה-מונחת-עצמים&quot;&gt;Java היא שפה מונחת עצמים&lt;/h2&gt;
+
+&lt;p&gt;Java נמצאת במשפחה של שפות מונחות עצמים. תכנות מונחה עצמים הוא גישה תכנותית וגם צורת מחשבה. הצורה שבה בני אדם חווים את העולם, היא צורה שחושבת בעצמים. הכלים שבהם אנחנו משתמשים הם עצמים - עצמים שמורכבים מעצמים אחרים, ויש להם שימושים - דברים שאנחנו עושים איתם. לפעמים בעזרת העצמים האלה אנחנו משנים עצמים אחרים - לפעמים העצמים האלה עושים את פעולתם על ידי עצמים אחרים שמהם הם מורכבים.&lt;/p&gt;
+
+&lt;p&gt;Java היא לא השפה מונחת העצמים היחידה, וגם לא הראשונה. למעשה, תכנות מונחה עצמים הוא, במובנים מסוימים, שפה בפני עצמה. לא בדיוק שפת תכנות, אבל יש אוסף של מונחים ושל תבניות וצורות ומבנים והתנהגויות שהוא &lt;strong&gt;בערך&lt;/strong&gt; אותו דבר &lt;strong&gt;ברוב&lt;/strong&gt; השפות מונחות העצמים. הבנת תכנות מונחה עצמים היא חשובה לרוב השפות השולטות היום בתחום. יש נטייה בשנים האחרונות להספיד את התכנות מונחה העצמים ולהגיד שהוא בדרכו החוצה, אבל אני אישית ממליץ לא להתרגש כשמתכנתים מספידים משהו או כשהם חוזים על משהו חדש ונוצץ שהוא העתיד (הם עושים זאת כל הזמן). גם אם סטטיסטיקות מסוימות מעידות על דעיכה של השפות האלה לטובת שפות אחרות, הרי שהדעיכה הזו עדיין איטית. אני מאמין שחשיבה מונחת עצמים היא עדיין אחד הדברים החשובים ביותר להבין על מנת להכנס לעולם התוכנה, ואני כנראה לא היחיד.&lt;/p&gt;
+
+&lt;p&gt;בעיניי, &lt;strong&gt;Java היא הבחירה הטובה ביותר לשפת תכנות ראשונה ללמוד&lt;/strong&gt;, וזאת כיוון שהיא שפה שהתכנות מונחה-העצמים הוא במרכז שלה, יותר משפות אחרות. יש הרבה שפות תכנות מונחות עצמים, אבל כנראה שבJava הן מהוות חלק משמעותי יותר מאשר בהרבה שפות אחרות. בנוסף, מבחינת סקאלת העיליות-תחתיות שהזכרנו קודם, Java היא, מבין השפות מונחות העצמים, במקום טוב באמצע. פייתון נחשבת על פי רוב עילית יותר ממנה, והיא שפה נפוצה למדי; C++ היא שפה שנחשבת על פי רוב תחתית יותר מJava, וגם היא נפוצה למדי. חוץ מזה, גם Java היא נפוצה למדי: כאשר תתקינו את Java, תוכנת ההתקנה כנראה תתגאה בפניכם ש”יותר משלושה מיליארד מכשירים מריצים את Java”, והמספר הזה היה המספר שתוכנת ההתקנה מציגה כבר שנים, והמספר האמיתי הוא כנראה כבר ממזמן הרבה יותר מזה.&lt;/p&gt;
+
+&lt;p&gt;יש כאן גם חיסרון מסוים בשפת Java - לJava אין תכונות מסוימות שיש להרבה שפות אחרות, וזה לפעמים מרחיק מתכנתים מJava. שפת C#, למשל, היא שפה מאוד דומה לJava, והיא למעשה התשובה של מיקרוסופט לJava - מיקרוסופט “העתיקו” את שפת Java והוסיפו לה תכונות מכל מיני שפות פופולריות נוספות. החיסרון הזה הוא בסדר - Java היא עדיין &lt;strong&gt;שפה מצוינת (הטובה ביותר לדעתי) להתחיל איתה את עולם התכנות&lt;/strong&gt; - זה לא אומר שזו בהכרח השפה הכי טובה לכל פרויקט ב”עולם האמיתי”. מי שרוצה ללמוד שפות עיליות יותר או תחתיות יותר אחר כך - הכרת Java, ובפרט, הבנה של תכנות מונחה עצמים, תעזור לו להרבה שפות אחרות.&lt;/p&gt;
+
+&lt;p&gt;אבל &lt;strong&gt;מהו&lt;/strong&gt; תכנות מונחה עצמים? אני נכנס לזה לעומק בהמשך - כאמור, בעיניי תכנות מונחה עצמים הוא הליבה של Java. נגיע לזה.&lt;/p&gt;
+
+&lt;div class=&quot;notice&quot;&gt;
+&lt;h1 id=&quot;נקודות-עיקריות&quot;&gt;נקודות עיקריות&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;שפות תכנות מאפשרות לנו ליצור תוכנות מבלי לכתוב אותן בשפת מכונה&lt;/li&gt;
+  &lt;li&gt;Java היא שפה שהיא עילית (high-level) במידה מסוימת, אבל לא במידה מוחלטת&lt;/li&gt;
+  &lt;li&gt;קוד הופך לשפת מכונה על ידי תוכנה הנקראת &lt;strong&gt;קומפיילר&lt;/strong&gt; או &lt;strong&gt;מהדר&lt;/strong&gt; (התהליך, בהתאם, נקרא קומפילציה או הידור)&lt;/li&gt;
+  &lt;li&gt;Java היא שפה מונחית עצמים - נלמד לעומק את המשמעות של זה בהמשך&lt;/li&gt;
+  &lt;li&gt;Java היא, לדעת רבים, שפה טובה להתחיל איתה את לימודי התכנות&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;</content><author><name>יובל דולב</name></author><category term="תכנות בכללי" /><category term="מבוא" /><category term="Java בכללי" /><category term="שפה אוניברסלית" /><category term="קומפילציה" /><category term="JVM" /><summary type="html">אוקיי, שפת תכנות, אבל מה זה אומר בכלל?</summary></entry></feed>

@@ -1,0 +1,18 @@
+main:
+  - title: "פוסטים"
+    url: /posts/
+  - title: "קטגוריות"
+    url: /categories/
+  - title: "תגים"
+    url: /tags/
+  - title: "אודות"
+    url: /about/
+  
+more:
+  - title: "משאבים נוספים"
+    children:
+      - title: "קונבנציות ב-Java"
+        url: /conventions/
+
+sidebar:
+  nav: "more"
