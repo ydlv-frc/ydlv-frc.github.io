@@ -1,6 +1,6 @@
 main:
-  - title: "פוסטים"
-    url: /posts/
+  #- title: "פוסטים"
+  #  url: /posts/
   - title: "קטגוריות"
     url: /categories/
   - title: "תגים"
@@ -8,11 +8,11 @@ main:
   - title: "אודות"
     url: /about/
   
-more:
-  - title: "משאבים נוספים"
-    children:
-      - title: "קונבנציות ב-Java"
-        url: /conventions/
+  - title: "סדרת הפוסטים הראשית"
+    url: /main-series/
+
+  - title: "קונבנציות ב-Java"
+    url: /conventions/
 
 sidebar:
   nav: "more"
