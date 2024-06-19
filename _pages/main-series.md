@@ -10,3 +10,4 @@ title: סדרת הפוסטים הראשית
 * [פלט ב-Java]({{ site.url }}{{ site.baseurl }}/2024/05/22/output/)
 * [קומנטים (AKA תגובות, הערות)]({{ site.url }}{{ site.baseurl }}/2024/05/28/comments/)
 * [משתנים]({{ site.url }}{{ site.baseurl }}/2024/06/19/variables/)
+
