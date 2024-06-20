@@ -88,6 +88,15 @@ public class RobotConstants {
 }
 ```
 
+## סיכום - מתי כל סגנון שם
+
+| סגנון שם         | דוגמאות                     | על מה להשתמש בסגנון הזה   |
+| ---------------- | --------------------------- | ------------------------- |
+| camelCase        | name, teamName              | פונקציות, משתנים, תכונות  |
+| PascalCase       | Sensor, TeamCaptain         | מחלקות, ממשקים, enums     |
+| lower_snake_case | subsystems, arm_upper_joint | חבילות                    |
+| UPPER_SNAKE_CASE | WHEEL_DIAMETER_CM, VOTLAGE  | קבועים סטטיים פרימיטיביים |
+
 ## הסימון ההונגרי - מיותר
 
 ישנו סגנון שמות ישן שמכונה, בין השאר, [הסימון ההונגרי](https://en.wikipedia.org/wiki/Hungarian_notation), ובו מוסיפים אות ראשונה לשדות (תכונות) שנקבעת לפי המשמעות או הטיפוס של השדה. זהו הסגנון שבו WPI משתמשים בקוד שלהם, כך שמי שיסתכל בתוך הקופסה שחורה ימצא שם שמות כמו `m_initActions.` כך גם בדוגמאות של WPI לקוד (קראו על הדוגמאות ואיך להשתמש בהן [בלינק הזה](https://docs.wpilib.org/en/stable/docs/software/examples-tutorials/wpilib-examples.html)). מהסיבות האלה היה חשוב שאציין מהו הסימון ההונגרי, כי ייתכן שתיתקלו בו.
