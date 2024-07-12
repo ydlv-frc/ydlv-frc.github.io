@@ -19,4 +19,7 @@ title: סדרת הפוסטים הראשית
 
 * [char]({{ site.url }}{{ site.baseurl }}/2024/07/07/char/)
 
+* [חלוקה ושארית בשלמים]({{ site.url }}{{ site.baseurl }}/2024/07/10/divmod/)
+
   
+
