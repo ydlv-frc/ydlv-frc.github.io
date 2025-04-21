@@ -1,0 +1,19 @@
+<div class="notice">
+    <p><b><u>כאן אפשר להריץ קוד!</u></b></p>
+    <p>
+        כאן תוכלו להריץ קוד ממש בדפדפן שלכן.
+        מומלץ להשתמש בסביבת עבודה על המחשב במקום (IntelliJ IDEA, Visual Studio Code ודומיהם) במידה ויש -
+        האופציה הזו עדיפה רק למי שאין לה סביבת עבודה מותקנת.
+    </p>
+    {% if include.input %}
+    <p>
+        כדי להריץ עם קלט בעזרת Scanner,
+        ניתן להכניס מראש את הקלט במקום שבו כתוב STDIN Input
+        או לסמן interactive mode כדי להכניס קלט בזמן ריצה כמו בצורה ה"רגילה".
+    </p>
+    {% endif %}
+</div>
+<body>
+    <div data-pym-src='https://www.jdoodle.com/embed/v1/{% if include.code %}{{include.code}}{%else%}aa7235ba6f6344a3{% endif %}'></div>
+    <script src='https://www.jdoodle.com/assets/jdoodle-pym.min.js' type='text/javascript'></script>
+</body>

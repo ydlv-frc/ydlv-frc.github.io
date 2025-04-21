@@ -18,6 +18,6 @@ title: "תכנות בג'אווה לקבוצות FRC"
 
 # תודות
 
-אתר זה פועל על [Jekyll](https://jekyllrb.com/), תשתית לבניית אתרי תוכן, עם תבנית [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/), שניהם תחת [רשיון שימוש MIT](https://en.wikipedia.org/wiki/MIT_License) - תודה.
+אתר זה פועל על [Jekyll](https://jekyllrb.com/), תשתית לבניית אתרי תוכן, עם תבנית [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/), שניהם תחת [רשיון שימוש MIT](https://en.wikipedia.org/wiki/MIT_License), ותיבות הרצת ה-Java משתמשות ב-[JDoodle](https://www.jdoodle.com/) תחת התנאים המופיעים [כאן](https://www.jdoodle.com/terms). תודה.
 
 <p class="ltr">If I'm missing an acknowledgement, please let me know (and sorry in advance). Thank you.</p>
