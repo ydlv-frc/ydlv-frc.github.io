@@ -94,6 +94,8 @@ char myNameInitial;
 myNameInitial = 'Y';
 ```
 
+<a name="not-an-equation"></a>
+
 כדאי להבהיר שלמרות שמופיע פה הסימן `=`, זו לא משוואה מתמטית. בשפת Java, המשמעות של:
 
 ```java
