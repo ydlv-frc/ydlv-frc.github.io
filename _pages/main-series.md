@@ -16,4 +16,6 @@ title: סדרת הפוסטים הראשית
 7. [char]({{ site.url }}{{ site.baseurl }}/2024/07/07/char/)
 8. [חלוקה ושארית בשלמים]({{ site.url }}{{ site.baseurl }}/2024/07/10/divmod/)
 9. [קלט עם Scanner]({{ site.url }}{{ site.baseurl }}/2025/05/05/input)
+10. [בוליאנים]({{site.url }}{{ site.baseurl }}/2025/06/10/booleans)
+11. [Lazy evaluation]({{ site.url }}{{ site.baseurl }}/2025/06/19/lazy-evaluation)
 
